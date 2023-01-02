@@ -77,13 +77,13 @@ public class CRMPostpaidRegistration extends DriverFactory {
                 }
 
                 //*Launch UMREX*//*
-                driverZsmart = getDriver("CRM");
-                loginFuncs = new CRMLoginLogoutFuncs(driverZsmart);
-                loginFuncs.loginWCTCRM();
-
-                //*Perform Postpaid Registration*//*
-                postpaidFuncs = new CRMPostpaidRegistrationFuncs(driverZsmart);
-                boolean statusFlag = postpaidFuncs.doCRMPostpaidRegistration(MainUtil.dictionary.get("REGISTRATION_TYPE"),"MYKAD");
+//                driverZsmart = getDriver("CRM");
+//                loginFuncs = new CRMLoginLogoutFuncs(driverZsmart);
+//                loginFuncs.loginWCTCRM();
+//
+//                //*Perform Postpaid Registration*//*
+//                postpaidFuncs = new CRMPostpaidRegistrationFuncs(driverZsmart);
+//                boolean statusFlag = postpaidFuncs.doCRMPostpaidRegistration(MainUtil.dictionary.get("REGISTRATION_TYPE"),"MYKAD");
                 //loginFuncs.logoutCRM();
 
                 Thread.sleep(30000);
