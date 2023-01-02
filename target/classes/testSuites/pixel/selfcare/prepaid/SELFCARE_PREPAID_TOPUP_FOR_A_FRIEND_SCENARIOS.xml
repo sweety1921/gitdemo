@@ -1,0 +1,484 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Selfcare Regression">
+	<listeners>
+		<listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+	</listeners>
+
+	<!--##############################################   Unlimited Funz  #######################################################################################-->
+
+
+       <!--<test name="Selfcare Prepaid TopUp For A Friend - 10 RM - Unlimited Funz - MYKAD Customer">
+            <parameter name="planName" value="Unlimited Funz"/>
+            <parameter name="topupType" value="Visa"/>
+            <parameter name="topupAmount" value="10"/>
+            <parameter name="msisdn" value="60182147302"/>
+            <parameter name="topupmsisdn" value="601170244001"/>
+            <parameter name="identificationType" value="MYKAD"/>
+            <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                    <methods>
+                        <include name="SelfcareAppTopupForFriend" />
+                    </methods>
+                </class>
+            </classes>
+        </test>-->
+    <!--
+           <test name="Selfcare Prepaid TopUp For A Friend - 10 RM - Unlimited Funz - PASSPORT Customer">
+               <parameter name="planName" value="Unlimited Funz"/>
+               <parameter name="topupType" value="Visa"/>
+               <parameter name="topupAmount" value="10"/>
+               <parameter name="msisdn" value="60159001370"/>
+               <parameter name="topupmsisdn" value="60182147327"/>
+               <parameter name="identificationType" value="PASSPORT"/>
+               <classes>
+                   <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                       <methods>
+                           <include name="SelfcareAppTopupForFriend" />
+                       </methods>
+                   </class>
+               </classes>
+           </test>
+   -->
+       <!-- <test name="Selfcare Prepaid TopUp For A Friend - 30 RM - Unlimited Funz - MYKAD Customer">
+            <parameter name="planName" value="Unlimited Funz"/>
+            <parameter name="topupType" value="Visa"/>
+            <parameter name="topupAmount" value="30"/>
+            <parameter name="msisdn" value="60182147302"/>
+            <parameter name="topupmsisdn" value="601170244003"/>
+            <parameter name="identificationType" value="MYKAD"/>
+            <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                    <methods>
+                        <include name="SelfcareAppTopupForFriend" />
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Selfcare Prepaid TopUp For A Friend - 30 RM - Unlimited Funz - PASSPORT Customer">
+            <parameter name="planName" value="Unlimited Funz"/>
+            <parameter name="topupType" value="Visa"/>
+            <parameter name="topupAmount" value="30"/>
+            <parameter name="msisdn" value="60182147302"/>
+            <parameter name="topupmsisdn" value="60182147310"/>
+            <parameter name="identificationType" value="PASSPORT"/>
+            <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                    <methods>
+                        <include name="SelfcareAppTopupForFriend" />
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Selfcare Prepaid TopUp For A Friend - 50 RM - Unlimited Funz - MYKAD Customer">
+            <parameter name="planName" value="Unlimited Funz"/>
+            <parameter name="topupType" value="Visa"/>
+            <parameter name="topupAmount" value="50"/>
+            <parameter name="msisdn" value="60182147302"/>
+            <parameter name="topupmsisdn" value="601170244006"/>
+            <parameter name="identificationType" value="MYKAD"/>
+            <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                    <methods>
+                        <include name="SelfcareAppTopupForFriend" />
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Selfcare Prepaid TopUp For A Friend - 50 RM - Unlimited Funz - PASSPORT Customer">
+            <parameter name="planName" value="Unlimited Funz"/>
+            <parameter name="topupType" value="Visa"/>
+            <parameter name="topupAmount" value="50"/>
+            <parameter name="msisdn" value="60182147302"/>
+            <parameter name="topupmsisdn" value="60182147330"/>
+            <parameter name="identificationType" value="PASSPORT"/>
+            <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                    <methods>
+                        <include name="SelfcareAppTopupForFriend" />
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Selfcare Prepaid TopUp For A Friend - 100 RM - Unlimited Funz - MYKAD Customer">
+            <parameter name="planName" value="Unlimited Funz"/>
+            <parameter name="topupType" value="Visa"/>
+            <parameter name="topupAmount" value="100"/>
+            <parameter name="msisdn" value="60182147302"/>
+            <parameter name="topupmsisdn" value="601170244008"/>
+            <parameter name="identificationType" value="MYKAD"/>
+            <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                    <methods>
+                        <include name="SelfcareAppTopupForFriend" />
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Selfcare Prepaid TopUp For A Friend - 100 RM - Unlimited Funz - PASSPORT Customer">
+            <parameter name="planName" value="Unlimited Funz"/>
+            <parameter name="topupType" value="Visa"/>
+            <parameter name="topupAmount" value="100"/>
+            <parameter name="msisdn" value="60182147302"/>
+            <parameter name="topupmsisdn" value="60182147290"/>
+            <parameter name="identificationType" value="PASSPORT"/>
+            <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                    <methods>
+                        <include name="SelfcareAppTopupForFriend" />
+                    </methods>
+                </class>
+            </classes>
+        </test>-->
+	<!--##############################################   Unlimited Power Plan  #######################################################################################-->
+
+            <test name="Selfcare Prepaid TopUp For A Friend - 10 RM - Unlimited Power Plan - PASSPORT Customer">
+                <parameter name="planName" value="Unlimited Power Plan"/>
+                <parameter name="topupType" value="Visa"/>
+                <parameter name="topupAmount" value="10"/>
+                <parameter name="msisdn" value="60182147591"/>
+                <parameter name="topupmsisdn" value="60182147231"/>
+                <parameter name="identificationType" value="PASSPORT"/>
+                <classes>
+                    <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                        <methods>
+                            <include name="SelfcareAppTopupForFriend" />
+                        </methods>
+                    </class>
+                </classes>
+            </test>
+
+            <test name="Selfcare Prepaid TopUp For A Friend - 30 RM - Unlimited Power Plan - PASSPORT Customer">
+                <parameter name="planName" value="Unlimited Power Plan"/>
+                <parameter name="topupType" value="Visa"/>
+                <parameter name="topupAmount" value="30"/>
+                <parameter name="msisdn" value="60182147591"/>
+                <parameter name="topupmsisdn" value="60182147231"/>
+                <parameter name="identificationType" value="PASSPORT"/>
+                <classes>
+                    <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                        <methods>
+                            <include name="SelfcareAppTopupForFriend" />
+                        </methods>
+                    </class>
+                </classes>
+            </test>
+
+            <test name="Selfcare Prepaid TopUp For A Friend - 50 RM - Unlimited Power Plan - MYKAD Customer">
+                <parameter name="planName" value="Unlimited Power Plan"/>
+                <parameter name="topupType" value="Visa"/>
+                <parameter name="topupAmount" value="50"/>
+                <parameter name="msisdn" value="60182147591"/>
+                <parameter name="topupmsisdn" value="60182147592"/>
+                <parameter name="identificationType" value="MYKAD"/>
+                <classes>
+                    <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                        <methods>
+                            <include name="SelfcareAppTopupForFriend" />
+                        </methods>
+                    </class>
+                </classes>
+            </test>
+
+            <test name="Selfcare Prepaid TopUp For A Friend - 100 RM - Unlimited Power Plan - MYKAD Customer">
+                <parameter name="planName" value="Unlimited Power Plan"/>
+                <parameter name="topupType" value="Visa"/>
+                <parameter name="topupAmount" value="100"/>
+                <parameter name="msisdn" value="60182147591"/>
+                <parameter name="topupmsisdn" value="60182147592"/>
+                <parameter name="identificationType" value="MYKAD"/>
+                <classes>
+                    <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                        <methods>
+                            <include name="SelfcareAppTopupForFriend" />
+                        </methods>
+                    </class>
+                </classes>
+            </test>
+
+
+	<!--##############################################   MB Prepaid Rate Plan  #######################################################################################-->
+
+	<!--<test name="Selfcare Prepaid TopUp - 10 RM - MB Prepaid Rate Plan - MYKAD Customer">
+		<parameter name="planName" value="MB Prepaid Rate Plan"/>
+		<parameter name="topupPaymentMethodType" value="Visa"/>
+		<parameter name="topupAmount" value="10"/>
+		<parameter name="Cardnumber" value="4012001038443335"/>
+		<parameter name="msisdn" value="60182146929"/>
+		<parameter name="identificationType" value="MYKAD"/>
+		<classes>
+			<class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+				<methods>
+					<include name="SelfcareAppTopup" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Selfcare Prepaid TopUp - 10 RM - MB Prepaid Rate Plan - PASSPORT Customer">
+		<parameter name="planName" value="MB Prepaid Rate Plan"/>
+		<parameter name="topupPaymentMethodType" value="Visa"/>
+		<parameter name="topupAmount" value="10"/>
+		<parameter name="Cardnumber" value="4012001038443335"/>
+		<parameter name="msisdn" value="60182147339"/>
+		<parameter name="identificationType" value="PASSPORT"/>
+		<classes>
+			<class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+				<methods>
+					<include name="SelfcareAppTopup" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+    <test name="Selfcare Prepaid TopUp - 30 RM - MB Prepaid Rate Plan - MYKAD Customer">
+        <parameter name="planName" value="MB Prepaid Rate Plan"/>
+        <parameter name="topupPaymentMethodType" value="Visa"/>
+        <parameter name="topupAmount" value="30"/>
+        <parameter name="Cardnumber" value="4012001038443335"/>
+        <parameter name="msisdn" value="60182146929"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                <methods>
+                    <include name="SelfcareAppTopup" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Selfcare Prepaid TopUp - 30 RM - MB Prepaid Rate Plan - PASSPORT Customer">
+        <parameter name="planName" value="MB Prepaid Rate Plan"/>
+        <parameter name="topupPaymentMethodType" value="Visa"/>
+        <parameter name="topupAmount" value="30"/>
+        <parameter name="Cardnumber" value="4012001038443335"/>
+        <parameter name="msisdn" value="60182147339"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                <methods>
+                    <include name="SelfcareAppTopup" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+  <!--  <test name="Selfcare Prepaid TopUp For A Friend - 100 RM - MB Prepaid Rate Plan - MYKAD Customer">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="topupType" value="Visa"/>
+        <parameter name="topupAmount" value="100"/>
+        <parameter name="msisdn" value="60182147239"/>
+        <parameter name="topupmsisdn" value="601170244027"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                <methods>
+                    <include name="SelfcareAppTopupForFriend" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+-->
+	<!--##############################################   Power Prepaid Plan  #######################################################################################-->
+
+    <!--<test name="Selfcare Prepaid TopUp For A Friend - 10 RM - Power Prepaid Plan - MYKAD Customer">
+        <parameter name="planName" value="Power Prepaid Plan"/>
+        <parameter name="topupType" value="Visa"/>
+        <parameter name="topupAmount" value="10"/>
+        <parameter name="msisdn" value="60182147196"/>
+        <parameter name="topupmsisdn" value="601170244030"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                <methods>
+                    <include name="SelfcareAppTopupForFriend" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+   <!-- <test name="Selfcare Prepaid TopUp For A Friend - 30 RM - Power Prepaid Plan - MYKAD Customer">
+        <parameter name="planName" value="Power Prepaid Plan"/>
+        <parameter name="topupType" value="Visa"/>
+        <parameter name="topupAmount" value="30"/>
+        <parameter name="msisdn" value="60182147196"/>
+        <parameter name="topupmsisdn" value="601170244030"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                <methods>
+                    <include name="SelfcareAppTopupForFriend" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+    <!--<test name="Selfcare Prepaid TopUp For A Friend - 50 RM - Power Prepaid Plan - MYKAD Customer">
+        <parameter name="planName" value="Power Prepaid Plan"/>
+        <parameter name="topupType" value="Visa"/>
+        <parameter name="topupAmount" value="50"/>
+        <parameter name="msisdn" value="60182147196"/>
+        <parameter name="topupmsisdn" value="601170244030"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                <methods>
+                    <include name="SelfcareAppTopupForFriend" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+   <!-- <test name="Selfcare Prepaid TopUp For A Friend - 100 RM - Power Prepaid Plan - MYKAD Customer">
+        <parameter name="planName" value="Power Prepaid Plan"/>
+        <parameter name="topupType" value="Visa"/>
+        <parameter name="topupAmount" value="100"/>
+        <parameter name="msisdn" value="60182147196"/>
+        <parameter name="topupmsisdn" value="601170244030"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                <methods>
+                    <include name="SelfcareAppTopupForFriend" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+
+	<!--##############################################   New U Prepaid Plan  #######################################################################################-->
+
+    <test name="Selfcare Prepaid TopUp For A Friend - 10 RM - New U Prepaid Plan - MYKAD Customer">
+        <parameter name="planName" value="New U Prepaid Plan"/>
+        <parameter name="topupType" value="Visa"/>
+        <parameter name="topupAmount" value="10"/>
+        <parameter name="msisdn" value="60182147031"/>
+        <parameter name="topupmsisdn" value="601170244020"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                <methods>
+                    <include name="SelfcareAppTopupForFriend" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Selfcare Prepaid TopUp For A Friend - 30 RM - New U Prepaid Plan - MYKAD Customer">
+        <parameter name="planName" value="New U Prepaid Plan"/>
+        <parameter name="topupType" value="Visa"/>
+        <parameter name="topupAmount" value="30"/>
+        <parameter name="msisdn" value="60182147031"/>
+        <parameter name="topupmsisdn" value="601170244020"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                <methods>
+                    <include name="SelfcareAppTopupForFriend" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Selfcare Prepaid TopUp For A Friend - 50 RM - New U Prepaid Plan - MYKAD Customer">
+        <parameter name="planName" value="New U Prepaid Plan"/>
+        <parameter name="topupType" value="Visa"/>
+        <parameter name="topupAmount" value="50"/>
+        <parameter name="msisdn" value="60182147031"/>
+        <parameter name="topupmsisdn" value="601170244020"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                <methods>
+                    <include name="SelfcareAppTopupForFriend" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Selfcare Prepaid TopUp For A Friend - 100 RM - New U Prepaid Plan - MYKAD Customer">
+        <parameter name="planName" value="New U Prepaid Plan"/>
+        <parameter name="topupType" value="Visa"/>
+        <parameter name="topupAmount" value="100"/>
+        <parameter name="msisdn" value="60182147031"/>
+        <parameter name="topupmsisdn" value="601170244020"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                <methods>
+                    <include name="SelfcareAppTopupForFriend" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+	<!--##############################################   U Prepaid Plan  #######################################################################################-->
+
+        <test name="Selfcare Prepaid TopUp For A Friend - 10 RM - U Prepaid Plan - MYKAD Customer">
+            <parameter name="planName" value="U Prepaid Plan"/>
+            <parameter name="topupType" value="Visa"/>
+            <parameter name="topupAmount" value="10"/>
+            <parameter name="msisdn" value="60182147103"/>
+            <parameter name="topupmsisdn" value="601170244018"/>
+            <parameter name="identificationType" value="MYKAD"/>
+            <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                    <methods>
+                        <include name="SelfcareAppTopupForFriend" />
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Selfcare Prepaid TopUp For A Friend - 30 RM - U Prepaid Plan - MYKAD Customer">
+            <parameter name="planName" value="U Prepaid Plan"/>
+            <parameter name="topupType" value="Visa"/>
+            <parameter name="topupAmount" value="30"/>
+            <parameter name="msisdn" value="60182147103"/>
+            <parameter name="topupmsisdn" value="601170244018"/>
+            <parameter name="identificationType" value="MYKAD"/>
+            <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                    <methods>
+                        <include name="SelfcareAppTopupForFriend" />
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Selfcare Prepaid TopUp For A Friend - 50 RM - U Prepaid Plan - MYKAD Customer">
+            <parameter name="planName" value="U Prepaid Plan"/>
+            <parameter name="topupType" value="Visa"/>
+            <parameter name="topupAmount" value="50"/>
+            <parameter name="msisdn" value="60182147103"/>
+            <parameter name="topupmsisdn" value="601170244018"/>
+            <parameter name="identificationType" value="MYKAD"/>
+            <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                    <methods>
+                        <include name="SelfcareAppTopupForFriend" />
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Selfcare Prepaid TopUp For A Friend - 100 RM - U Prepaid Plan - MYKAD Customer">
+            <parameter name="planName" value="U Prepaid Plan"/>
+            <parameter name="topupType" value="Visa"/>
+            <parameter name="topupAmount" value="100"/>
+            <parameter name="msisdn" value="60182147103"/>
+            <parameter name="topupmsisdn" value="601170244018"/>
+            <parameter name="identificationType" value="MYKAD"/>
+            <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcarePrepaidTopUp">
+                    <methods>
+                        <include name="SelfcareAppTopupForFriend" />
+                    </methods>
+                </class>
+            </classes>
+        </test>
+</suite>

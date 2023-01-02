@@ -1,0 +1,128 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Selfcare Regression">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+
+    <test name="MobileApp Postpaid Update Profile">
+        <parameter name="msisdn" value="60182146945"/>
+        <parameter name="Email" value="AUTOTEST@UM.COM"/>
+        <parameter name="Address1" value="CITY CENTER KUALA LUMPUR"/>
+        <parameter name="Zip" value="50200"/>
+        <parameter name="Homenumber" value="60176600163"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcareGeneric">
+                <methods>
+                    <include name="SelfcareUpdateProfile" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <!--
+
+
+    <test name="Selfcare Postpaid AutoDebit">
+        <parameter name="msisdn" value="601139132844"/>
+        <parameter name="Cardnumber" value="4012001038443335"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcareGeneric">
+                <methods>
+                    <include name="SelfcareUpdateProfile" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+        <test name="Selfcare Postpaid PayBill">
+            <parameter name="Amount" value="1"/>
+            <parameter name="msisdn" value="601139182008"/>
+            <parameter name="Cardnumber" value="4012001038443335"/>
+            <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcarePaybill">
+                <methods>
+                        <include name="SelfcarePayBill_postpaid" />
+                </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Selfcare Postpaid Purchase Golife insurance">
+            <parameter name="msisdn" value="601139131695"/>
+            <parameter name="Golife" value="GOLIFE5"/>
+            <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcareGolifePurchase">
+                <methods>
+                        <include name="SelfcarePurchaseGolife" />
+                </methods>
+                </class>
+            </classes>
+        </test>
+        <test name="Selfcare Postpaid Change Pin">
+            <parameter name="msisdn" value="601139131695"/>
+            <parameter name="NewPin" value="123456"/>
+               <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcareGeneric">
+                <methods>
+                        <include name="SelfcareChangePin" />
+                </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Selfcare Postpaid Change Rate Plan">
+            <parameter name="NewRatePlan" value="P139"/>
+            <parameter name="NewRatePlanFullname" value="Postpaid P139"/>
+            <parameter name="msisdn" value="601139182008"/>
+               <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcareChangeplan">
+                <methods>
+                        <include name="SelfcareChangeplan_Postpaid" />
+                </methods>
+                </class>
+            </classes>
+        </test>
+
+
+        <test name="Selfcare Roaming and IDD Service">
+            <parameter name="msisdn" value="601139131695"/>
+               <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcareGeneric">
+                <methods>
+                        <include name="SelfcareRoamingandIDDService" />
+                </methods>
+                </class>
+            </classes>
+        </test>
+
+         <test name="Selfcare EBilling Activation Service">
+            <parameter name="msisdn" value="601139131695"/>
+               <classes>
+                <class name="com.umtest.selfcare.testcases.SelfcareGeneric">
+                <methods>
+                        <include name="SelfcareActivateEBilling" />
+                </methods>
+                </class>
+            </classes>
+        </test>
+
+            <test name="Selfcare Postpaid Change Rate Plan">
+        <parameter name="NewRatePlan" value="P139"/>
+        <parameter name="NewRatePlanFullname" value="Postpaid P139"/>
+        <parameter name="msisdn" value="601139182008"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcareChangeplan">
+                <methods>
+                    <include name="SelfcareChangeplan_Postpaid" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+        -->
+
+
+</suite>

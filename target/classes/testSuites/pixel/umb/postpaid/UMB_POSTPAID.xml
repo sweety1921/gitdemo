@@ -1,0 +1,791 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UMB Prepaid">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+    <test name="UMB Postpaid Bundle Purchase - 	FSP U Postpaid 98 - SMS Plus">
+        <parameter name="bundleName" value="SMS Plus"/>
+        <parameter name="msisdn" value="60182146982"/>
+        <parameter name="planType" value="POSTPAID"/>
+        <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+    <test name="UMB Postpaid Bundle Purchase - FSP U Postpaid 98 - U SMS Plus">
+        <parameter name="bundleName" value="U SMS Plus"/>
+        <parameter name="msisdn" value="60182146982"/>
+        <parameter name="planType" value="POSTPAID"/>
+        <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+    <test name="UMB Postpaid Bundle Purchase - FSP U Postpaid 98 - Data Booster">
+        <parameter name="bundleName" value="Data Booster"/>
+        <parameter name="msisdn" value="60182146982"/>
+        <parameter name="planType" value="POSTPAID"/>
+        <parameter name="testDataFile" value="bundlePurchase\postpaid\DataBooster10GB.json"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+    <test name="UMB Postpaid Bundle Purchase - FSP U Postpaid 98 - Hotspot Booster">
+        <parameter name="bundleName" value="Hotspot Booster"/>
+        <parameter name="msisdn" value="60182146982"/>
+        <parameter name="planType" value="POSTPAID"/>
+        <parameter name="testDataFile" value="bundlePurchase\postpaid\HotspotBooster5GB.json"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+    <!--
+
+  <test name="P99 SMS Plus Bundle Unsubscribe">
+      <parameter name="category" value="OLD Unsubscribe U Talk or U SMS"/>
+      <parameter name="msisdn" value="60182146979"/>
+      <parameter name="planType" value="POSTPAID"/>
+      <classes>
+          <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+      </classes>
+  </test>
+  <test name="P99 U SMS Plus Bundle Unsubscribe">
+      <parameter name="category" value="OLD Unsubscribe U Talk or U SMS"/>
+      <parameter name="msisdn" value="60182146979"/>
+      <parameter name="planType" value="POSTPAID"/>
+      <classes>
+          <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+      </classes>
+  </test>
+
+  <test name="Unsubscribe U Postpaid 38 Rate Plan - SMS Plus">
+      <parameter name="category" value="Unsubscribe U Talk or U SMS"/>
+      <parameter name="msisdn" value="60182146964"/>
+      <parameter name="planType" value="POSTPAID"/>
+      <classes>
+          <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+      </classes>
+  </test>
+
+  <test name="Unsubscribe U Postpaid 38 Rate Plan -U SMS Plus">
+      <parameter name="category" value="Unsubscribe U Talk or U SMS"/>
+      <parameter name="msisdn" value="60182146964"/>
+      <parameter name="planType" value="POSTPAID"/>
+      <classes>
+          <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+      </classes>
+  </test>
+
+  <test name="Unsubscribe U Postpaid 68 Rate Plan - SMS Plus">
+      <parameter name="category" value="Unsubscribe U Talk or U SMS"/>
+      <parameter name="msisdn" value="60159606754"/>
+      <parameter name="planType" value="POSTPAID"/>
+      <classes>
+          <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+      </classes>
+  </test>
+
+  <test name="Unsubscribe U Postpaid 68 Rate Plan -U SMS Plus">
+      <parameter name="category" value="Unsubscribe U Talk or U SMS"/>
+      <parameter name="msisdn" value="60159606754"/>
+      <parameter name="planType" value="POSTPAID"/>
+      <classes>
+          <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+      </classes>
+  </test>
+  <test name="Unsubscribe U Postpaid 98 Rate Plan - SMS Plus">
+      <parameter name="category" value="Unsubscribe U Talk or U SMS"/>
+      <parameter name="msisdn" value="60159606756"/>
+      <parameter name="planType" value="POSTPAID"/>
+      <classes>
+          <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+      </classes>
+  </test>
+
+  <test name="Unsubscribe U Postpaid 98 Rate Plan -U SMS Plus">
+      <parameter name="category" value="Unsubscribe U Talk or U SMS"/>
+      <parameter name="msisdn" value="60159606756"/>
+      <parameter name="planType" value="POSTPAID"/>
+      <classes>
+          <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+      </classes>
+  </test>
+
+
+
+
+
+      <test name="UMB Postpaid Bundle Purchase- P99 SMS Plus Bundle Purchase">
+          <parameter name="bundleName" value="OLD SMS Plus"/>
+          <parameter name="msisdn" value="60182146979"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase P99 U SMS Plus Bundle Purchase">
+          <parameter name="bundleName" value="OLD U SMS Plus"/>
+          <parameter name="msisdn" value="60182146979"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase P99 - Booster">
+          <parameter name="bundleName" value="Standard Booster"/>
+          <parameter name="msisdn" value="60182146979"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\Booster.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 38 Rate Plan - SMS Plus">
+          <parameter name="bundleName" value="SMS Plus"/>
+          <parameter name="msisdn" value="60182146964"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 38 Rate Plan - U SMS Plus">
+          <parameter name="bundleName" value="U SMS Plus"/>
+          <parameter name="msisdn" value="60182146964"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 38 Rate Plan - Data Booster">
+          <parameter name="bundleName" value="Data Booster"/>
+          <parameter name="msisdn" value="60182146964"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\DataBooster10GB.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 38 Rate Plan - Hotspot Booster">
+          <parameter name="bundleName" value="Hotspot Booster"/>
+          <parameter name="msisdn" value="60182146964"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\HotspotBooster5GB.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 68 Rate Plan - SMS Plus">
+          <parameter name="bundleName" value="SMS Plus"/>
+          <parameter name="msisdn" value="60159606754"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 68 Rate Plan - U SMS Plus">
+          <parameter name="bundleName" value="U SMS Plus"/>
+          <parameter name="msisdn" value="60159606754"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 68 Rate Plan - Data Booster">
+          <parameter name="bundleName" value="Data Booster"/>
+          <parameter name="msisdn" value="60159606754"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\DataBooster10GB.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 68 Rate Plan - Hotspot Booster">
+          <parameter name="bundleName" value="Hotspot Booster"/>
+          <parameter name="msisdn" value="60159606754"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\HotspotBooster5GB.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 98 Rate Plan - SMS Plus">
+          <parameter name="bundleName" value="SMS Plus"/>
+          <parameter name="msisdn" value="60159606756"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 98 Rate Plan - U SMS Plus">
+          <parameter name="bundleName" value="U SMS Plus"/>
+          <parameter name="msisdn" value="60159606756"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 98 Rate Plan - Data Booster">
+          <parameter name="bundleName" value="Data Booster"/>
+          <parameter name="msisdn" value="60159606756"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\DataBooster10GB.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 98 Rate Plan - Hotspot Booster">
+          <parameter name="bundleName" value="Hotspot Booster"/>
+          <parameter name="msisdn" value="60159606756"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\HotspotBooster5GB.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+
+
+
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 38 Rate Plan - SMS Plus">
+          <parameter name="bundleName" value="SMS Plus"/>
+          <parameter name="msisdn" value="60182146964"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 38 Rate Plan - U SMS Plus">
+          <parameter name="bundleName" value="U SMS Plus"/>
+          <parameter name="msisdn" value="60182146964"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 38 Rate Plan - Data Booster">
+          <parameter name="bundleName" value="Data Booster"/>
+          <parameter name="msisdn" value="60182146964"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\DataBooster10GB.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 38 Rate Plan - Hotspot Booster">
+          <parameter name="bundleName" value="Hotspot Booster"/>
+          <parameter name="msisdn" value="60182146964"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\HotspotBooster5GB.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+     <test name="UMB Postpaid Bundle Purchase - U Postpaid 68 Rate Plan - SMS Plus">
+         <parameter name="bundleName" value="SMS Plus"/>
+         <parameter name="msisdn" value="60159606754"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+
+     <test name="UMB Postpaid Bundle Purchase - U Postpaid 68 Rate Plan - U SMS Plus">
+         <parameter name="bundleName" value="U SMS Plus"/>
+         <parameter name="msisdn" value="60159606754"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+
+     <test name="UMB Postpaid Bundle Purchase - U Postpaid 68 Rate Plan - Data Booster">
+         <parameter name="bundleName" value="Data Booster"/>
+         <parameter name="msisdn" value="60159606754"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\DataBooster10GB.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+
+     <test name="UMB Postpaid Bundle Purchase - U Postpaid 68 Rate Plan - Hotspot Booster">
+         <parameter name="bundleName" value="Hotspot Booster"/>
+         <parameter name="msisdn" value="60159606754"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\HotspotBooster5GB.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+
+
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 98 Rate Plan - SMS Plus">
+          <parameter name="bundleName" value="SMS Plus"/>
+          <parameter name="msisdn" value="60159606756"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 98 Rate Plan - U SMS Plus">
+          <parameter name="bundleName" value="U SMS Plus"/>
+          <parameter name="msisdn" value="60159606756"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 98 Rate Plan - Data Booster">
+          <parameter name="bundleName" value="Data Booster"/>
+          <parameter name="msisdn" value="60159606756"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\DataBooster10GB.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 98 Rate Plan - Hotspot Booster">
+          <parameter name="bundleName" value="Hotspot Booster"/>
+          <parameter name="msisdn" value="60159606756"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\HotspotBooster5GB.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+
+
+
+
+
+
+      <test name="UMB Postpaid Bundle Purchase- P99 SMS Plus Bundle Purchase">
+          <parameter name="bundleName" value="SMS Plus"/>
+          <parameter name="msisdn" value="60182146980"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase P99 U SMS Plus Bundle Purchase">
+          <parameter name="bundleName" value="U SMS Plus"/>
+          <parameter name="msisdn" value="60182146980"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+
+      <test name="UMB Postpaid Bundle Purchase P99 - Booster">
+          <parameter name="bundleName" value="Standard Booster"/>
+          <parameter name="msisdn" value="60182146980"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\Booster.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+
+
+      <test name="P99 Standard Booster Bundle Purchase">
+          <parameter name="bundleName" value="Data Booster"/>
+          <parameter name="msisdn" value="60182146980"/>
+          <parameter name="planType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase\postpaid\Booster.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+      <test name="UMB Postpaid Bundle Purchase - U Postpaid 98 Rate Plan - SMS Plus">
+         <parameter name="bundleName" value="SMS Plus"/>
+         <parameter name="msisdn" value="60182147598"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+
+     <test name="UMB Postpaid Bundle Purchase - U Postpaid 98 Rate Plan - U SMS Plus">
+         <parameter name="bundleName" value="U SMS Plus"/>
+         <parameter name="msisdn" value="60182147598"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+
+     <test name="UMB Postpaid Bundle Purchase - U Postpaid 98 Rate Plan - Data Booster">
+         <parameter name="bundleName" value="Data Booster"/>
+         <parameter name="msisdn" value="60182146981"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\DataBooster10GB.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+
+     <test name="UMB Postpaid Bundle Purchase - U Postpaid 98 Rate Plan - Hotspot Booster">
+         <parameter name="bundleName" value="Hotspot Booster"/>
+         <parameter name="msisdn" value="60182147598"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\HotspotBooster5GB.json.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+
+
+
+
+
+      <test name="UMB Postpaid Bundle Purchase- P139 SMS Plus Bundle Purchase">
+         <parameter name="bundleName" value="SMS Plus"/>
+         <parameter name="msisdn" value="60182146918"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+
+     <test name="UMB Postpaid Bundle Purchase P139 U SMS Plus Bundle Purchase">
+         <parameter name="bundleName" value="U SMS Plus"/>
+         <parameter name="msisdn" value="60182146918"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+
+
+     <test name="UMB Postpaid Bundle Purchase P139 - Booster">
+         <parameter name="bundleName" value="Standard Booster"/>
+         <parameter name="msisdn" value="60182146918"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\Booster.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+
+
+
+     <test name="P139 Standard Booster Bundle Purchase">
+         <parameter name="bundleName" value="Standard Booster"/>
+         <parameter name="msisdn" value="60182146918"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\Booster.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+
+
+     <test name="Postpaid Change Rate Plan">
+         <parameter name="category" value="ChangeRatePlan"/>
+         <parameter name="newplanName" value="P99"/>
+         <parameter name="msisdn" value="60182146897"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="\bundlePurchase\postpaid\P99Freebies.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.UMBChangeRatePlan"></class>
+         </classes>
+     </test>
+
+
+
+  <test name="P139 Standard Booster Bundle Purchase">
+         <parameter name="bundleName" value="Standard Booster"/>
+         <parameter name="msisdn" value="60182146912"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\Booster.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+
+   <test name="P99 U SMS Plus Bundle Unsubscribe">
+       <parameter name="category" value="Unsubscribe U Talk or U SMS"/>
+       <parameter name="msisdn" value="60182146911"/>
+       <parameter name="planType" value="POSTPAID"/>
+       <classes>
+           <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+       </classes>
+   </test>
+
+
+
+
+   <test name="P38 U SMS Plus Bundle Unsubscribe">
+       <parameter name="category" value="Unsubscribe U Talk or U SMS"/>
+       <parameter name="msisdn" value="60182146950"/>
+       <parameter name="planType" value="POSTPAID"/>
+       <classes>
+           <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+       </classes>
+   </test>
+
+
+
+
+
+
+     <test name="GX68 U SMS Plus Bundle Unsubscribe">
+       <parameter name="category" value="Unsubscribe U Talk or U SMS"/>
+       <parameter name="msisdn" value="60159606509"/>
+       <parameter name="planType" value="POSTPAID"/>
+       <classes>
+           <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+       </classes>
+   </test>
+
+
+     <test name="P79 U SMS Plus Bundle Unsubscribe">
+       <parameter name="category" value="Unsubscribe U Talk or U SMS"/>
+       <parameter name="msisdn" value="60182146945"/>
+       <parameter name="planType" value="POSTPAID"/>
+       <classes>
+           <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+       </classes>
+   </test>
+
+
+  <test name="GX68 SMS Plus (On Net SMS) Bundle Purchase">
+      <parameter name="bundleName" value="SMS Plus"/>
+      <parameter name="msisdn" value="60159606509"/>
+      <parameter name="planType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+      <classes>
+          <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+      </classes>
+  </test>
+
+  <test name="GX68 U SMS Plus (On Net SMS) Bundle Purchase">
+      <parameter name="bundleName" value="U SMS Plus"/>
+      <parameter name="msisdn" value="60159606509"/>
+      <parameter name="planType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+      <classes>
+          <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+      </classes>
+  </test>
+
+
+
+
+   <test name="P38 U SMS Plus (On Net SMS) Bundle Purchase">
+      <parameter name="bundleName" value="U SMS Plus"/>
+      <parameter name="msisdn" value="60182146950"/>
+      <parameter name="planType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+      <classes>
+          <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+      </classes>
+  </test>
+
+  <test name="P38 SMS Plus (On Net SMS) Bundle Purchase">
+      <parameter name="bundleName" value="SMS Plus"/>
+      <parameter name="msisdn" value="60182146950"/>
+      <parameter name="planType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+      <classes>
+          <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+      </classes>
+  </test>
+
+
+     <test name="P79 U SMS Plus (On Net SMS) Bundle Purchase">
+         <parameter name="bundleName" value="U SMS Plus"/>
+         <parameter name="msisdn" value="60182146945"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+
+     <test name="P79 SMS Plus (On Net SMS) Bundle Purchase">
+         <parameter name="bundleName" value="SMS Plus"/>
+         <parameter name="msisdn" value="60182146945"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+
+
+
+    <test name="P38 SMS Plus (On Net SMS) Bundle Purchase">
+        <parameter name="bundleName" value="SMS Plus"/>
+        <parameter name="msisdn" value="60182146950"/>
+        <parameter name="planType" value="POSTPAID"/>
+        <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+
+
+
+
+    <test name="P38 U SMS Plus (On Net SMS) Bundle Purchase">
+        <parameter name="bundleName" value="U SMS Plus"/>
+        <parameter name="msisdn" value="60182146950"/>
+        <parameter name="planType" value="POSTPAID"/>
+        <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+        <test name="P79 U SMS Plus (On Net SMS) Bundle Purchase">
+        <parameter name="bundleName" value="U SMS Plus"/>
+        <parameter name="msisdn" value="60182146945"/>
+        <parameter name="planType" value="POSTPAID"/>
+        <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+
+
+
+
+
+    <test name="U SMS Plus Bundle Unsubscribe">
+        <parameter name="category" value="U SMS Plus"/>
+        <parameter name="msisdn" value="60182146912"/>
+        <parameter name="planType" value="POSTPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+        </classes>
+
+    </test>
+
+  <test name="U Talk Plus (On Net call) Bundle Unsubscribe">
+      <parameter name="category" value="Unsubscribe U Talk or U SMS"/>
+      <parameter name="msisdn" value="60182146912"/>
+      <parameter name="planType" value="POSTPAID"/>
+      <classes>
+          <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+      </classes>
+
+  </test>
+
+
+
+    <test name="U Talk Plus (On Net call) Bundle Purchase">
+      <parameter name="bundleName" value="U Talk Plus (On Net call)"/>
+      <parameter name="msisdn" value="601139132844"/>
+      <parameter name="planType" value="POSTPAID"/>
+
+      <classes>
+          <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+      </classes>
+  </test>
+
+
+
+  <test name="P99 U SMS Plus (On Net SMS) Bundle Purchase">
+      <parameter name="bundleName" value="U SMS Plus"/>
+      <parameter name="msisdn" value="60182146944"/>
+      <parameter name="planType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+      <classes>
+          <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+      </classes>
+  </test>
+
+  <test name="P99 SMS Plus (On Net SMS) Bundle Purchase">
+      <parameter name="bundleName" value="SMS Plus"/>
+      <parameter name="msisdn" value="60182146944"/>
+      <parameter name="planType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+      <classes>
+          <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+      </classes>
+  </test>
+
+
+     <test name="GX68 SMS Plus (On Net SMS) Bundle Purchase">
+         <parameter name="bundleName" value="SMS Plus"/>
+         <parameter name="msisdn" value="60159606509"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\SMSPlus.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+
+     <test name="GX68 U SMS Plus (On Net SMS) Bundle Purchase">
+         <parameter name="bundleName" value="U SMS Plus"/>
+         <parameter name="msisdn" value="60159606509"/>
+         <parameter name="planType" value="POSTPAID"/>
+         <parameter name="testDataFile" value="bundlePurchase\postpaid\USMSPlus.json"/>
+         <classes>
+             <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+         </classes>
+     </test>
+    -->
+
+
+
+
+
+
+</suite>

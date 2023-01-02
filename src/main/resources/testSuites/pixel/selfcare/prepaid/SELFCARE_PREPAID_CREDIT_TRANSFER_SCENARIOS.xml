@@ -1,0 +1,189 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Selfcare Regression - Credit Share (Transfer) - Scenarios">
+	<listeners>
+		<listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+	</listeners>
+
+    <!--##########################################        Unlimited Funz         #########################################-->
+
+	<!--<test name="Prepaid Credit Transfer - RM3 - Unlimited Funz">
+        <parameter name="category" value="CreditTransfer"/>
+        <parameter name="Sender_msisdn" value="601170244010"/>
+        <parameter name="Receiver_msisdn" value="601170244011"/>
+        <parameter name="transfer_amount" value="3"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidCreditShare">
+                <methods>
+                    <include name="creditTransfer" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+    <!--<test name="Prepaid Credit Transfer - RM10 - Unlimited Funz">
+        <parameter name="category" value="CreditTransfer"/>
+        <parameter name="Sender_msisdn" value="60182147226"/>
+        <parameter name="Receiver_msisdn" value="601170244011"/>
+        <parameter name="transfer_amount" value="10"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidCreditShare">
+                <methods>
+                    <include name="creditTransfer" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+    
+    <!--##########################################       Unlimited Power Plan       #########################################-->
+<!--
+    <test name="Prepaid Credit Transfer - RM3 - Unlimited Power Plan">
+        <parameter name="category" value="CreditTransfer"/>
+        <parameter name="Sender_msisdn" value="60182147249"/>
+        <parameter name="Receiver_msisdn" value="601170244017"/>
+        <parameter name="transfer_amount" value="3"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidCreditShare">
+                <methods>
+                    <include name="creditTransfer" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+    <test name="Prepaid Credit Transfer - RM10 - Unlimited Power Plan">
+        <parameter name="category" value="CreditTransfer"/>
+        <parameter name="Sender_msisdn" value="60182147249"/>
+        <parameter name="Receiver_msisdn" value="601170244017"/>
+        <parameter name="transfer_amount" value="10"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidCreditShare">
+                <methods>
+                    <include name="creditTransfer" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--##########################################      Power Prepaid Plan       #########################################-->
+
+  <!--  <test name="Prepaid Credit Transfer - RM3 - Power Prepaid Plan">
+        <parameter name="category" value="CreditTransfer"/>
+        <parameter name="Sender_msisdn" value="60182147193"/>
+        <parameter name="Receiver_msisdn" value="60182147196"/>
+        <parameter name="transfer_amount" value="3"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidCreditShare">
+                <methods>
+                    <include name="creditTransfer" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+    <test name="Prepaid Credit Transfer - RM10 - Power Prepaid Plan">
+        <parameter name="category" value="CreditTransfer"/>
+        <parameter name="Sender_msisdn" value="60182147193"/>
+        <parameter name="Receiver_msisdn" value="60182147196"/>
+        <parameter name="transfer_amount" value="10"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidCreditShare">
+                <methods>
+                    <include name="creditTransfer" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--##########################################     MB Prepaid Rate Plan    #########################################-->
+
+   <!-- <test name="Prepaid Credit Transfer - RM3 - MB Prepaid Rate Plan">
+        <parameter name="category" value="CreditTransfer"/>
+        <parameter name="Sender_msisdn" value="60182146929"/>
+        <parameter name="Receiver_msisdn" value="601170244015"/>
+        <parameter name="transfer_amount" value="3"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidCreditShare">
+                <methods>
+                    <include name="creditTransfer" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+    <!--<test name="Prepaid Credit Transfer - RM10 - MB Prepaid Rate Plan">
+        <parameter name="category" value="CreditTransfer"/>
+        <parameter name="Sender_msisdn" value="601170244015"/>
+        <parameter name="Receiver_msisdn" value="601170244027"/>
+        <parameter name="transfer_amount" value="10"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidCreditShare">
+                <methods>
+                    <include name="creditTransfer" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+
+
+    <!--##########################################      New U Prepaid Plan       #########################################-->
+
+   <!-- <test name="Prepaid Credit Transfer - RM3 - New U Prepaid Plan">
+        <parameter name="category" value="CreditTransfer"/>
+        <parameter name="Sender_msisdn" value="60182146924"/>
+        <parameter name="Receiver_msisdn" value="601170244020"/>
+        <parameter name="transfer_amount" value="3"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidCreditShare">
+                <methods>
+                    <include name="creditTransfer" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+    <!--<test name="Prepaid Credit Transfer - RM10 - New U Prepaid Plan">
+        <parameter name="category" value="CreditTransfer"/>
+        <parameter name="Sender_msisdn" value="60182146924"/>
+        <parameter name="Receiver_msisdn" value="601170244020"/>
+        <parameter name="transfer_amount" value="10"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidCreditShare">
+                <methods>
+                    <include name="creditTransfer" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+-->
+    <!--##########################################      U Prepaid Plan       #########################################-->
+<!--
+    <test name="Prepaid Credit Transfer - RM3 - U Prepaid Plan">
+        <parameter name="category" value="CreditTransfer"/>
+        <parameter name="Sender_msisdn" value="60182147590"/>
+        <parameter name="Receiver_msisdn" value="601170244018"/>
+        <parameter name="transfer_amount" value="3"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidCreditShare">
+                <methods>
+                    <include name="creditTransfer" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+    <!--<test name="Prepaid Credit Transfer - RM10 - U Prepaid Plan">
+        <parameter name="category" value="CreditTransfer"/>
+        <parameter name="Sender_msisdn" value="60182147590"/>
+        <parameter name="Receiver_msisdn" value="601170244018"/>
+        <parameter name="transfer_amount" value="10"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePrepaidCreditShare">
+                <methods>
+                    <include name="creditTransfer" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+</suite>

@@ -1,0 +1,447 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Mobile App - Prepaid Regression">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+
+    <test name="Mobile App Prepaid Top Up - Invalid Voucher">
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="topupAmount" value="10"/>
+        <parameter name="topupPIN" value="31686149599312"/>
+        <parameter name="errorMessage" value="Sorry, the voucher you applied is not valid. Please try again with a different voucher."/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppTopup_InvalidVoucher" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--<test name="Mobile App Prepaid Topup 50RM">
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="50"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile App Prepaid Topup 30RM">
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="30"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="MobileApp Postpaid Change PIN">
+        <parameter name="msisdn" value="60159606462"/>
+        <parameter name="NewPin" value="123458"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppProfileandloginupdate">
+                <methods>
+                    <include name="MobileAppPostpaidChangePIN" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="MobileApp Prepaid Update Profile">
+        <parameter name="msisdn" value="60159606462"/>
+        <parameter name="EMAILID" value="AUTOTEST@UM.COM"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppProfileandloginupdate">
+                <methods>
+                    <include name="MobileAppPostpaidUpdateProfile" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile App Prepaid to Prepaid 5G">
+        <parameter name="newPlanName" value="5G Prepaid"/>
+        <parameter name="currentPlanName" value="Unlimited Funz"/>
+        <parameter name="msisdn" value="601139264737"/>
+        <parameter name="testDataFile" value="newRegistration/registrationOnly/prepaidTo5G.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppChangeplan">
+                <methods>
+                    <include name="MobileAppSwitchPlanPrepaid" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+   <!-- <test name="Mobile App Prepaid Bundle Purchase GX30 - Unlimited Power">
+        <parameter name="msisdn" value="601139273063"/>
+        <parameter name="bundleName" value="GX30"/>
+        <parameter name="accountType" value="PREPAID"/>
+        <parameter name="testDataFile" value="\bundlePurchase\prepaid\GX30.json"/>
+
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+    <!-- **************************  Unlimited FUNZ Rate Plan **************************-->
+
+    <!--<test name="Mobile App Prepaid Bundle Purchase MB-DAY - Unlimited FUNZ">
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="bundleName" value="MB-DAY"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\bundlePurchase\prepaid\MBDAY.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile App Prepaid Bundle Purchase EPIKKK Video3 - Unlimited FUNZ">
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="bundleName" value="EPIKKK Video3"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\bundlePurchase\prepaid\EPIKKKVIDEO3.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile App Prepaid Bundle Purchase MB-WEEK - Unlimited FUNZ">
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="bundleName" value="MBWEEK"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\bundlePurchase\prepaid\MBWEEK.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile App Prepaid Bundle Purchase MB128 - Unlimited FUNZ">
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="bundleName" value="MB 128"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\bundlePurchase\prepaid\MB128.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile App Prepaid Bundle Purchase MB68 - Unlimited FUNZ">
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="bundleName" value="MB 68"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\bundlePurchase\prepaid\MB68.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile App Prepaid Bundle Purchase GX38 - Unlimited FUNZ">
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="bundleName" value="GX38"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\bundlePurchase\prepaid\GX38.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile App Prepaid Credit Share Transfer 3RM here">
+        <parameter name="category" value="CreditTransfer"/>
+        <parameter name="Sender_msisdn" value="60159806924"/>
+        <parameter name="Receiver_msisdn" value="601139260384"/>
+        <parameter name="transfer_amount" value="3"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidCreditTransfer">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile App Prepaid Bundle Purchase GX30 - Unlimited FUNZ">
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="bundleName" value="GX30"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\bundlePurchase\prepaid\GX30.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile App Prepaid Bundle Purchase MB40 - Unlimited FUNZ">
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="bundleName" value="MB 40"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\bundlePurchase\prepaid\MB40.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile App Prepaid Bundle Purchase MB15 - Unlimited FUNZ">
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="bundleName" value="MB 15"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\bundlePurchase\prepaid\MB15.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile App Prepaid Bundle Purchase GX12 - Unlimited FUNZ">
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="bundleName" value="GX12"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\bundlePurchase\prepaid\GX12.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile App Prepaid Bundle Purchase UMI 36 - Unlimited FUNZ">
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="bundleName" value="UMI 36"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\bundlePurchase\prepaid\UMI36.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+               <test name="Mobile App Prepaid Bundle Purchase GX30 - Unlimited Power">
+            <parameter name="msisdn" value="601139273063"/>
+            <parameter name="bundleName" value="GX30"/>
+            <parameter name="accountType" value="PREPAID"/>
+            <parameter name="testDataFile" value="\bundlePurchase\prepaid\GX30.json"/>
+
+            <classes>
+                <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                    <methods>
+                        <include name="purchaseBundle" />
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+
+
+-->
+
+       <!-- **************************  Unlimited Power Rate Plan  **************************-->
+
+        <!--
+
+    <test name="Mobile App Prepaid Bundle Purchase UMI 36 - Unlimited Power">
+        <parameter name="msisdn" value="601139273063"/>
+        <parameter name="bundleName" value="UMI 36"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\bundlePurchase\prepaid\UMI36.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+              <test name="Mobile App Prepaid Bundle Purchase GX12 - Unlimited Power">
+                   <parameter name="msisdn" value="60182147343"/>
+                   <parameter name="bundleName" value="GX12"/>
+                   <parameter name="accountType" value="Prepaid"/>
+                   <classes>
+                       <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                           <methods>
+                               <include name="purchaseBundle" />
+                           </methods>
+                       </class>
+                   </classes>
+               </test>
+
+        <test name="Mobile App Prepaid Bundle Purchase GX38 - Unlimited Power">
+                           <parameter name="msisdn" value="60182147343"/>
+                           <parameter name="bundleName" value="GX38"/>
+                           <parameter name="accountType" value="Prepaid"/>
+                           <classes>
+                               <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                                   <methods>
+                                       <include name="purchaseBundle" />
+                                   </methods>
+                               </class>
+                           </classes>
+                       </test>
+
+                       <test name="Mobile App Prepaid Bundle Purchase MB-WEEK - Unlimited Power">
+                           <parameter name="msisdn" value="60182147343"/>
+                           <parameter name="bundleName" value="MBWEEK"/>
+                           <parameter name="accountType" value="Prepaid"/>
+                           <classes>
+                               <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                                   <methods>
+                                       <include name="purchaseBundle" />
+                                   </methods>
+                               </class>
+                           </classes>
+                       </test>
+
+                       <test name="Mobile App Prepaid Bundle Purchase EPIKKK Video3 - Unlimited Power">
+                           <parameter name="msisdn" value="60182147343"/>
+                           <parameter name="bundleName" value="EPIKKK Video3"/>
+                           <parameter name="accountType" value="Prepaid"/>
+                           <classes>
+                               <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                                   <methods>
+                                       <include name="purchaseBundle" />
+                                   </methods>
+                               </class>
+                           </classes>
+                       </test>-->
+
+ <!--####################################################################################################################################-->
+    <!--<test name="Mobile App Prepaid Top Up For A Friend - 10RM">
+        <parameter name="msisdn" value="60182147331"/>
+        <parameter name="topupAmount" value="30"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUpForAFriend" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+
+
+    <test name="Mobile App Prepaid Cross Purchase - Unlimited FUNZ">
+        <parameter name="msisdn" value="60182147310"/>
+        <parameter name="bundleName1" value="UMI 20"/>
+        <parameter name="bundleName2" value="GT30"/>
+        <parameter name="testDataFile" value="\bundlePurchase\prepaid\GT30.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="crossPurchasePrepaidBundles" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+   <test name="Mobile App Prepaid RePurchase - Unlimited FUNZ">
+        <parameter name="msisdn" value="60182147327"/>
+        <parameter name="bundleName" value="UMI 20"/>
+        <parameter name="testDataFile" value="\bundlePurchase\prepaid\repurchase\unlimitedFunz-UMI20-purchase1.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="repurchasePrepaidBundle" />
+                </methods>
+            </class>
+        </classes>
+   </test>
+
+
+
+    <test name="Mobile App Prepaid Purchase Golife5 insurance">
+        <parameter name="msisdn" value="60182147327"/>
+        <parameter name="Golife" value="GOLIFE5"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppGoLifePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseGolife" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+    <test name="MobileApp Prepaid Update Profile">
+        <parameter name="msisdn" value="601596666868"/>
+        <parameter name="EMAILID" value="AUTOTEST@UM.COM"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppProfileandloginupdate">
+                <methods>
+                    <include name="MobileAppPostpaidUpdateProfile" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="MobileApp Postpaid ResetPIN">
+        <parameter name="msisdn" value="601596666868"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppProfileandloginupdate">
+                <methods>
+                    <include name="MobileAppPostpaidResetPIN" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    -->
+
+</suite>

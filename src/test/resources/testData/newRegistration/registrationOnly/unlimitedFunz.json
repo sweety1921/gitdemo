@@ -1,0 +1,22 @@
+{
+"ratePlanName":"Unlimited Funz",
+"bundleName":"NA",
+"serviceCategory":[
+{"type":"Data",
+	"services":[
+					{					
+						"serviceName":"Free 200 MB Activation Internet",
+						"quota":"200.00 MB left",
+						"usage":"0.00/200.00 MB Used",
+						"validity":"Valid For 5 day(s)"
+                    },
+					{					
+						"serviceName":"Free Basic Data",
+						"quota":"1.00 GB left",
+						"usage":"0.00/1.00 GB Used",
+						"validity":"NA"
+                    }
+               ]
+}
+]
+}

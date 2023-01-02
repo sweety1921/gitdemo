@@ -1,0 +1,52 @@
+{
+"ratePlanName":"Unlimited Funz",
+"bundleName":"BoosterPlan-MB40",
+"serviceCategory":[
+{"type":"Data",
+	"services":[
+					{
+						"serviceName":"Prepaid MB40",
+						"quota":"2.00 GB left",
+						"usage":"0.00/2.00 GB Used",
+						"validity":"Valid For 30 day(s)"
+                    },
+					{
+						"serviceName":"Prepaid MB40 Off Peak",
+						"quota":"1.00 GB left",
+						"usage":"0.00/1.00 GB Used",
+						"validity":"Valid For 30 day(s)"
+                    },
+					{
+						"serviceName":"YTM-Pre Youtube and Tonton",
+						"quota":"Unlimited",
+						"usage":"My Usage 0.00 MB",
+						"validity":"NA"
+                    },
+					{
+						"serviceName":"Prepaid Video-Onz 2GB",						
+						"quota":"2.00 GB left",
+						"usage":"0.00/2.00 GB Used",
+						"validity":"NA"
+                    },
+					{
+						"serviceName":"MusicOnz Unlimited 30 days",
+						"quota":"Unlimited",
+						"usage":"My Usage 0.00 MB",
+						"validity":"NA"
+                    },
+					{
+						"serviceName":"Prepaid Booster",
+						"quota":"1.00 GB left",
+						"usage":"0.00/1.00 GB Used",
+						"validity":"Valid For 3 day(s)"
+                    },																								
+					{					
+						"serviceName":"Unlimited Funz Free Basic Data 64kbps",
+						"quota":"1.00 GB left",
+						"usage":"0.00/1.00 GB Used",
+						"validity":"Valid For 10 day(s)"
+                    }
+               ]
+}
+]
+}

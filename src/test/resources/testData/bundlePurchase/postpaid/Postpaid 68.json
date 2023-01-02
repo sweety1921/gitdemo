@@ -1,0 +1,38 @@
+{
+"ratePlanName":"Postpaid  68",
+"bundleName":"U Talk Plus",
+"serviceCategory":[
+{"type":"Data",
+	"services":[
+					{					
+						"serviceName":"U Postpaid 68 Base Data",
+						"quota":"100.00 GB left",
+						"usage":"0.00/100.00 GB Used",
+						"validity":"NA"
+                    },
+					{					
+						"serviceName":"U Postpaid 68 Hotspot",
+						"quota":"5.00 GB left",
+						"usage":"0.00/5.00 GB Used",
+						"validity":"NA"
+                    },
+					{					
+						"serviceName":"U Postpaid 68 Roaming",
+						"quota":"15.00 GB left",
+						"usage":"0.00/15.00 GB Used",
+						"validity":"NA"
+                    }
+               ]
+},
+{"type":"Voice",
+	"services":[
+					{					
+						"serviceName":"Bundle Call-Onz U Postpaid 68",
+						"quota":"Unlimited",
+						"usage":"NA",
+						"validity":"NA"
+                    }
+               ]
+}
+]
+}

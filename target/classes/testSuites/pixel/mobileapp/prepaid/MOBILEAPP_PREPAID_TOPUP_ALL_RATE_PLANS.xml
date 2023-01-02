@@ -1,0 +1,570 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Mobile App - Prepaid Regression">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+
+ <!--####################################################################################################################################-->
+
+    <test name="Mobile Apps Prepaid Top Up - RM 10 - Unlimited Funz - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147302"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="10"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 10 - Unlimited Funz - MALAYSIAN">
+        <parameter name="msisdn" value="60182147226"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="10"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--#############################################################################################################################-->
+    <test name="Mobile Apps Prepaid Top Up - RM 10 - Unlimited Power - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147231"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="Unlimited Power"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="10"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 10 - Unlimited Power - MALAYSIAN">
+        <parameter name="msisdn" value="60182147249"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="Unlimited Power"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="10"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--#############################################################################################################################-->
+    <test name="Mobile Apps Prepaid Top Up - RM 10 - Power - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147141"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="Power"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="10"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 10 - Power - MALAYSIAN">
+        <parameter name="msisdn" value="60182147193"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="Power"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="10"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--#############################################################################################################################-->
+    <test name="Mobile Apps Prepaid Top Up - RM 10 - New U Prepaid Plan - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147037"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="New U Prepaid Plan"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="10"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 10 - New U Prepaid Plan - MALAYSIAN">
+        <parameter name="msisdn" value="60182147038"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="New U Prepaid Plan"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="10"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--#############################################################################################################################-->
+    <test name="Mobile Apps Prepaid Top Up - RM 10 - U Prepaid Plan - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147039"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="U Prepaid Plan"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="10"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 10 - U Prepaid Plan - MALAYSIAN">
+        <parameter name="msisdn" value="60182147106"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="U Prepaid Plan"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="10"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--#############################################################################################################################-->
+    <test name="Mobile Apps Prepaid Top Up - RM 10 - MB Prepaid - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147203"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="MB Prepaid"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="10"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 10 - MB Prepaid - MALAYSIAN">
+        <parameter name="msisdn" value="60182147225"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="MB Prepaid"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="10"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--###########################################################   Denomination  RM 30    ###############################################################-->
+
+    <test name="Mobile Apps Prepaid Top Up - RM 30 - Unlimited Funz - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147332"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="30"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 30 - Unlimited Funz - MALAYSIAN">
+        <parameter name="msisdn" value="60182147226"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="30"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--#############################################################################################################################-->
+
+    <test name="Mobile Apps Prepaid Top Up - RM 30 - Unlimited Power - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147231"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="Unlimited Power"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="30"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 30 - Unlimited Power - MALAYSIAN">
+        <parameter name="msisdn" value="60182147249"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="Unlimited Power"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="30"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--#############################################################################################################################-->
+    <test name="Mobile Apps Prepaid Top Up - RM 30 - Power - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147141"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="Power"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="30"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 30 - Power - MALAYSIAN">
+        <parameter name="msisdn" value="60182147193"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="Power"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="30"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--#############################################################################################################################-->
+    <test name="Mobile Apps Prepaid Top Up - RM 30 - New U Prepaid Plan - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147037"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="New U Prepaid Plan"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="30"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 30 - New U Prepaid Plan - MALAYSIAN">
+        <parameter name="msisdn" value="60182147038"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="New U Prepaid Plan"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="30"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--#############################################################################################################################-->
+    <test name="Mobile Apps Prepaid Top Up - RM 30 - U Prepaid Plan - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147039"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="U Prepaid Plan"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="30"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 30 - U Prepaid Plan - MALAYSIAN">
+        <parameter name="msisdn" value="60182147106"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="U Prepaid Plan"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="30"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--#############################################################################################################################-->
+    <test name="Mobile Apps Prepaid Top Up - RM 30 - MB Prepaid - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147203"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="MB Prepaid"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="30"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 30 - MB Prepaid - MALAYSIAN">
+        <parameter name="msisdn" value="60182147225"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="MB Prepaid"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="30"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--##########################################################   Denomination  RM 50    ###############################################################&ndash;&gt;-->
+
+    <test name="Mobile Apps Prepaid Top Up - RM 50 - Unlimited Funz - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147332"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="50"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 50 - Unlimited Funz - MALAYSIAN">
+        <parameter name="msisdn" value="60182147226"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="50"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--#############################################################################################################################&ndash;&gt;-->
+
+    <test name="Mobile Apps Prepaid Top Up - RM 50 - Unlimited Power - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147231"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="Unlimited Power"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="50"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 50 - Unlimited Power - MALAYSIAN">
+        <parameter name="msisdn" value="60182147249"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="Unlimited Power"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="50"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--#############################################################################################################################&ndash;&gt;-->
+
+    <test name="Mobile Apps Prepaid Top Up - RM 50 - Power - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147141"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="Power"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="50"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 50 - Power - MALAYSIAN">
+        <parameter name="msisdn" value="60182147193"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="Power"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="50"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--#############################################################################################################################&ndash;&gt;-->
+
+    <test name="Mobile Apps Prepaid Top Up - RM 50 - New U Prepaid Plan - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147037"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="New U Prepaid Plan"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="50"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 50 - New U Prepaid Plan - MALAYSIAN">
+        <parameter name="msisdn" value="60182147038"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="New U Prepaid Plan"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="50"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--#############################################################################################################################&ndash;&gt;-->
+
+    <test name="Mobile Apps Prepaid Top Up - RM 50 - U Prepaid Plan - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147039"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="U Prepaid Plan"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="50"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 50 - U Prepaid Plan - MALAYSIAN">
+        <parameter name="msisdn" value="60182147106"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="U Prepaid Plan"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="50"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--#############################################################################################################################&ndash;&gt;-->
+
+    <test name="Mobile Apps Prepaid Top Up - RM 50 - MB Prepaid - NON-MALAYSIAN">
+        <parameter name="msisdn" value="60182147203"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <parameter name="planName" value="MB Prepaid"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="50"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Mobile Apps Prepaid Top Up - RM 50 - MB Prepaid - MALAYSIAN">
+        <parameter name="msisdn" value="60182147225"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <parameter name="planName" value="MB Prepaid"/>
+        <parameter name="topupType" value="PIN"/>
+        <parameter name="topupAmount" value="50"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppPrepaidTopUp">
+                <methods>
+                    <include name="MobileAppPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

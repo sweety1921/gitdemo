@@ -1,0 +1,53 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UMREX Regression">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+
+    <test name="ZSMART Prepaid Bundle Purchase Unlimited Funz">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="custIdentificationType" value="MYKAD"/>
+        <parameter name="cycleEndDate" value="5"/>
+        <parameter name="testDataFile" value="newRegistration/registrationOnly/unlimitedFunz.json"/>
+        <classes>
+            <class name="com.umtest.crm.testcases.CRMPrepaidRegistration">
+                <methods>
+                    <include name="ZSMARTRegistrationPrepaid" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--<test name="ZSMART Prepaid Loose Sim Registration Unlimited Funz">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="accountType" value="PREPAID"/>
+        <parameter name="amount" value="10"/>
+        <parameter name="simType" value="3"/>
+        <parameter name="custIdentificationType" value="MYKAD"/>
+        <parameter name="cycleEndDate" value="5"/>
+        <parameter name="testDataFile" value="newRegistration/registrationOnly/unlimitedFunz.json"/>
+        <classes>
+            <class name="com.umtest.crm.testcases.CRMPrepaidRegistration">
+                <methods>
+                    <include name="ZSMARTLooseSimRegistrationPrepaid" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="ZSMART Prepaid Bundle Registration Unlimited Funz">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="custIdentificationType" value="MYKAD"/>
+        <parameter name="cycleEndDate" value="5"/>
+        <parameter name="testDataFile" value="newRegistration/registrationOnly/unlimitedFunz.json"/>
+        <classes>
+            <class name="com.umtest.crm.testcases.CRMPrepaidRegistration">
+                <methods>
+                    <include name="ZSMARTRegistrationPrepaid" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+</suite>

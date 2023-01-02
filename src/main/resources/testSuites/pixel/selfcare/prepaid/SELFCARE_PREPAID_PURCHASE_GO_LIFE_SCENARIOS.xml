@@ -1,0 +1,185 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Selfcare Regression">
+	<listeners>
+		<listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+	</listeners>
+
+	  <!--  <test name="Selfcare Prepaid Purchase Golife 5 Insurance - Unlimited Funz">
+			<parameter name="Golife" value="GOLIFE5"/>
+			<parameter name="msisdn" value="601170244010"/>
+			<parameter name="Amount" value="5"/>
+			<parameter name="PaymentType" value="Visa"/>
+			<classes>
+				<class name="com.umtest.selfcare.testcases.SelfcarePrepaidGolifePurchase">
+					<methods>
+						<include name="SelfcarePurchaseGolife" />
+					</methods>
+				</class>
+			</classes>
+		</test>
+
+		<test name="Selfcare Prepaid Purchase Golife 10 Insurance - Unlimited Funz">
+			<parameter name="Golife" value="GOLIFE10"/>
+			<parameter name="msisdn" value="601170244007"/>
+			<parameter name="Amount" value="10"/>
+			<parameter name="PaymentType" value="Visa"/>
+			<classes>
+				<class name="com.umtest.selfcare.testcases.SelfcarePrepaidGolifePurchase">
+					<methods>
+						<include name="SelfcarePurchaseGolife" />
+					</methods>
+				</class>
+			</classes>
+		</test>-->
+
+	<!--#################################################   UNLIMITED POWER PLAN       #####################################################################-->
+
+		<!--<test name="Selfcare Prepaid Purchase Golife 5 Insurance - Unlimited Power Plan">
+			<parameter name="Golife" value="GOLIFE5"/>
+			<parameter name="msisdn" value="60182146904"/>
+			<parameter name="Amount" value="5"/>
+			<parameter name="PaymentType" value="Visa"/>
+			<classes>
+				<class name="com.umtest.selfcare.testcases.SelfcarePrepaidGolifePurchase">
+					<methods>
+						<include name="SelfcarePurchaseGolife" />
+					</methods>
+				</class>
+			</classes>
+		</test>
+
+		<test name="Selfcare Prepaid Purchase Golife 10 Insurance - Unlimited Power Plan">
+			<parameter name="Golife" value="GOLIFE10"/>
+			<parameter name="msisdn" value="60182146913"/>
+			<parameter name="Amount" value="10"/>
+			<parameter name="PaymentType" value="Visa"/>
+			<classes>
+				<class name="com.umtest.selfcare.testcases.SelfcarePrepaidGolifePurchase">
+					<methods>
+						<include name="SelfcarePurchaseGolife" />
+					</methods>
+				</class>
+			</classes>
+		</test>-->
+
+	<!--#################################################   MB Prepaid Rate Plan       #####################################################################-->
+
+		<!--<test name="Selfcare Prepaid Purchase Golife 5 Insurance - MB Prepaid Rate Plan">
+			<parameter name="Golife" value="GOLIFE5"/>
+			<parameter name="msisdn" value="60182146929"/>
+			<parameter name="Amount" value="5"/>
+			<parameter name="PaymentType" value="Visa"/>
+			<classes>
+				<class name="com.umtest.selfcare.testcases.SelfcarePrepaidGolifePurchase">
+					<methods>
+						<include name="SelfcarePurchaseGolife" />
+					</methods>
+				</class>
+			</classes>
+		</test>-->
+
+		<test name="Selfcare Prepaid Purchase Golife 10 Insurance - MB Prepaid Rate Plan">
+			<parameter name="Golife" value="GOLIFE10"/>
+			<parameter name="msisdn" value="601170244015"/>
+			<parameter name="Amount" value="10"/>
+			<parameter name="PaymentType" value="Visa"/>
+			<classes>
+				<class name="com.umtest.selfcare.testcases.SelfcarePrepaidGolifePurchase">
+					<methods>
+						<include name="SelfcarePurchaseGolife" />
+					</methods>
+				</class>
+			</classes>
+		</test>
+
+	<!--#################################################   Power Prepaid Plan       #####################################################################-->
+
+	<!--	<test name="Selfcare Prepaid Purchase Golife 5 Insurance - Power Prepaid Plan">
+			<parameter name="Golife" value="GOLIFE5"/>
+			<parameter name="msisdn" value="60182146922"/>
+			<parameter name="Amount" value="5"/>
+			<parameter name="PaymentType" value="Visa"/>
+			<classes>
+				<class name="com.umtest.selfcare.testcases.SelfcarePrepaidGolifePurchase">
+					<methods>
+						<include name="SelfcarePurchaseGolife" />
+					</methods>
+				</class>
+			</classes>
+		</test>
+
+		<test name="Selfcare Prepaid Purchase Golife 10 Insurance - Power Prepaid Plan">
+			<parameter name="Golife" value="GOLIFE10"/>
+			<parameter name="msisdn" value="60182146918"/>
+			<parameter name="Amount" value="10"/>
+			<parameter name="PaymentType" value="Visa"/>
+			<classes>
+				<class name="com.umtest.selfcare.testcases.SelfcarePrepaidGolifePurchase">
+					<methods>
+						<include name="SelfcarePurchaseGolife" />
+					</methods>
+				</class>
+			</classes>
+		</test>
+-->
+	<!--#################################################   New U Prepaid Plan       #####################################################################-->
+
+		<!--<test name="Selfcare Prepaid Purchase Golife 5 Insurance - New U Prepaid Plan">
+			<parameter name="Golife" value="GOLIFE5"/>
+			<parameter name="msisdn" value="60182146924"/>
+			<parameter name="Amount" value="5"/>
+			<parameter name="PaymentType" value="Visa"/>
+			<classes>
+				<class name="com.umtest.selfcare.testcases.SelfcarePrepaidGolifePurchase">
+					<methods>
+						<include name="SelfcarePurchaseGolife" />
+					</methods>
+				</class>
+			</classes>
+		</test>
+
+		<test name="Selfcare Prepaid Purchase Golife 10 Insurance - New U Prepaid Plan">
+			<parameter name="Golife" value="GOLIFE10"/>
+			<parameter name="msisdn" value="60182146928"/>
+			<parameter name="Amount" value="10"/>
+			<parameter name="PaymentType" value="Visa"/>
+			<classes>
+				<class name="com.umtest.selfcare.testcases.SelfcarePrepaidGolifePurchase">
+					<methods>
+						<include name="SelfcarePurchaseGolife" />
+					</methods>
+				</class>
+			</classes>
+		</test>
+-->
+	<!--#################################################   U Prepaid Plan       #####################################################################-->
+
+	<!--	<test name="Selfcare Prepaid Purchase Golife 5 Insurance - U Prepaid Plan">
+			<parameter name="Golife" value="GOLIFE5"/>
+			<parameter name="msisdn" value="60182146917"/>
+			<parameter name="Amount" value="5"/>
+			<parameter name="PaymentType" value="Visa"/>
+			<classes>
+				<class name="com.umtest.selfcare.testcases.SelfcarePrepaidGolifePurchase">
+					<methods>
+						<include name="SelfcarePurchaseGolife" />
+					</methods>
+				</class>
+			</classes>
+		</test>-->
+
+		<!--<test name="Selfcare Prepaid Purchase Golife 10 Insurance - U Prepaid Plan">
+			<parameter name="Golife" value="GOLIFE10"/>
+			<parameter name="msisdn" value="60182146914"/>
+			<parameter name="Amount" value="10"/>
+			<parameter name="PaymentType" value="Visa"/>
+			<classes>
+				<class name="com.umtest.selfcare.testcases.SelfcarePrepaidGolifePurchase">
+					<methods>
+						<include name="SelfcarePurchaseGolife" />
+					</methods>
+				</class>
+			</classes>
+		</test>-->
+
+</suite>

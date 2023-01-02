@@ -1,0 +1,57 @@
+{
+"ratePlanName":"Unlimited Funz",
+"bundleName":"DataBooster5-UMI20",
+"serviceCategory":[
+{"type":"Data",
+	"services":[
+					{
+						"serviceName":"UMI20 Data",
+						"quota":"1.50 GB left",
+						"usage":"0.00/1.50 GB Used",
+						"validity":"Valid For 31 day(s)"
+                    },
+					{
+						"serviceName":"YTM-Pre Youtube and Tonton",
+						"quota":"Unlimited",
+						"usage":"My Usage 0.00 MB",
+						"validity":"NA"
+                    },
+					{
+						"serviceName":"Prepaid Video-Onz 500MB",
+						"quota":"500.00 MB left",
+						"usage":"0.00/500.00 MB Used",
+						"validity":"NA"
+                    },
+					{
+						"serviceName":"MusicOnz Unlimited 30 days",
+						"quota":"Unlimited",
+						"usage":"My Usage 0.00 MB",
+						"validity":"NA"
+                    },												
+					{					
+						"serviceName":"Data Booster 5",
+						"quota":"10.00 GB left",
+						"usage":"0.00/10.00 GB Used",
+						"validity":"Valid For 14 day(s)"
+                    },					
+					{					
+						"serviceName":"Unlimited Funz Free Basic Data 64kbps",
+						"quota":"1.00 GB left",
+						"usage":"0.00/1.00 GB Used",
+						"validity":"Valid For 11 day(s)"
+                    }
+               ]
+},
+{"type":"Voice",
+	"services":[
+					{
+						"serviceName":"UMI20 Voice All-Net",
+						"quota":"20.00 MINS left",
+						"usage":"0.00/20.00 MINS Used",
+						"validity":"Valid For 30 day(s)"
+                    }
+          ]
+               
+}
+]
+}

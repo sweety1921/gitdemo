@@ -1,0 +1,16 @@
+{
+	"ratePlanName":"postpaid Rate Plan",
+	"bundleName":"Data Booster 10GB",
+	"serviceCategory":[
+		{"type":"Data",
+			"services":[
+				{
+					"serviceName":"Postpaid Data Booster 10GB",
+					"quota":"10.00 GB left",
+					"usage":"0.00/10.00 GB Used",
+					"validity":"NA"
+				}
+			]
+		}
+	]
+}

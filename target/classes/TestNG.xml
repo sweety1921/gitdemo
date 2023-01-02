@@ -1,0 +1,60 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite">
+	<listeners>
+		<listener
+			class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+	</listeners>
+
+	<test name="UMREX Prepaid Registration Unlimited Funz">
+    	<parameter name="planName" value="Unlimited Funz"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+            <methods>
+					<include name="UMREXRegistrationPrepaid" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+    
+    <test name="UMREX Postpaid Registration Postpaid P38">
+    	<parameter name="planName" value="Postpaid P38"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+            <methods>
+					<include name="UMREXRegistrationPostpaid" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+
+	<test name="UMI20 Bundle Purchase">
+		<parameter name="bundleName" value="UMIDirectPurchase:UMI20" />
+		<parameter name="msisdn" value="601139161626" />
+		<classes>
+			<class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+		</classes>
+	</test>
+
+	<test name="UMI20 Bundle Unsubscribe">
+		<parameter name="category" value="UMIUnsubscribe" />
+		<parameter name="msisdn" value="601139161626" />
+		<classes>
+			<class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+		</classes>
+	</test>
+	
+	<test name="Mobile Apps Prepaid Topup 10RM">
+    	<parameter name="planName" value="Unlimited Funz"/>
+    	<parameter name="topupType" value="Pin"/>
+    	<parameter name="topupAmount" value="10"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppTopUp">
+            <methods>
+					<include name="MobileAppTopup" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+
+
+</suite>

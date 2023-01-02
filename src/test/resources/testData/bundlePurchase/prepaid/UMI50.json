@@ -1,0 +1,56 @@
+{
+"ratePlanName":"Unlimited Funz",
+"bundleName":"UMI50",
+"serviceCategory":[
+{"type":"Data",
+	"services":[
+					{					
+						"serviceName":"Base Data (12 GB)",
+						"quota":"12.00 GB left",
+						"usage":"0.00/12.00 GB Used",
+						"validity":"Valid For 30 day(s)"
+                    },
+					{					
+						"serviceName":"Prepaid Video-Onz 10GB",
+						"quota":"10.00 GB left",
+						"usage":"0.00/10.00 GB Used",
+						"validity":"NA"
+                    },
+					{					
+						"serviceName":"MusicOnz Unlimited 30 days",
+						"quota":"Unlimited",
+						"usage":"My Usage 0.00 MB",
+						"validity":"NA"
+                    },
+					{
+						"serviceName":"Free 200 MB Activation Internet",
+						"quota":"200.00 MB left",
+						"usage":"0.00/200.00 MB Used",
+						"validity":"Valid For 5 day(s)"
+					},
+					{
+						"serviceName":"Free Basic Data",
+						"quota":"1.00 GB left",
+						"usage":"0.00/1.00 GB Used",
+						"validity":"Valid For 8 day(s)"
+					},
+					{
+						"serviceName":"Free Unlimited Social and messaging and gaming",
+						"quota":"Unlimited",
+						"usage":"My Usage 0.00 MB",
+						"validity":"NA"
+					}
+               ]
+},
+{"type":"Voice",
+	"services":[
+					{					
+						"serviceName":"Voice All-Net (50 mins)",
+						"quota":"50.00 MINS left",
+						"usage":"0.00/50.00 MINS Used",
+						"validity":"Valid For 30 day(s)"
+                    }
+				]
+}				
+]
+}

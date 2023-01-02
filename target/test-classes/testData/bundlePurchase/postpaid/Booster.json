@@ -1,0 +1,16 @@
+{
+	"ratePlanName":"postpaid Rate Plan",
+	"bundleName":"Hotspot Booster 3GB",
+	"serviceCategory":[
+		{"type":"Data",
+			"services":[
+				{
+					"serviceName":"Hotspot Booster",
+					"quota":"3.00 GB left",
+					"usage":"0.00/3.00 GB Used",
+					"validity":"NA"
+				}
+			]
+		}
+	]
+}

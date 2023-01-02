@@ -1,0 +1,66 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Mobile App Prepaid Regression">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+
+    <!--###########################################       BOOSTER PURCHASE     ######################################################################-->
+
+   <test name="[Mobile Apps Prepaid] Bundle Purchase - UMI 20 - Data Booster5 - Unlimited FUNZ">
+        <parameter name="msisdn" value="60182147271"/>
+        <parameter name="bundleName" value="UMI 20"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="bundlePurchase/unlimitedFunz/DataBooster5-UMI20.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase - MB40 - Booster Plan - Unlimited FUNZ">
+        <parameter name="msisdn" value="60182147288"/>
+        <parameter name="bundleName" value="MB40"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="bundlePurchase/unlimitedFunz/BoosterPlan-MB40.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase -GX38 - Turbo Booster - Unlimited FUNZ">
+        <parameter name="msisdn" value="60182147270"/>
+        <parameter name="bundleName" value="GX38"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="bundlePurchase/unlimitedFunz/TurboBooster-GX38.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase - GX30 - Hotspot Booster - Unlimited FUNZ">
+        <parameter name="msisdn" value="60182147302"/>
+        <parameter name="bundleName" value="GX30"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="bundlePurchase/unlimitedFunz/HotspotBooster-GX30.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>

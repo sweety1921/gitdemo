@@ -1,0 +1,393 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UMB Prepaid">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+
+
+    <test name="Prepaid Top-up for a friend">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="category" value="TOP-UP FOR FRIEND"/>
+        <parameter name="msisdn" value="601139289598"/>
+        <parameter name="Receiver_msisdn" value="601139293723"/>
+        <parameter name="topupAmount" value="50"/>
+        <parameter name="identificationType" value="MyKad"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.UMBTopUp"></class>
+        </classes>
+    </test>
+
+
+
+    <!--
+
+        <test name="Change Rate Plan">
+        <parameter name="newplanName" value="5G-Ready Prepaid"/>
+        <parameter name="category" value="ChangeRatePlan"/>
+        <parameter name="msisdn" value="601139293723"/>
+        <parameter name="planType" value="Prepaid"/>
+        <parameter name="testDataFile" value="newRegistration/registrationOnly/prepaidTo5G.json"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.UMBChangeRatePlan"></class>
+        </classes>
+    </test>
+
+       <test name="Account Validity Extension">
+           <parameter name="category" value="EXTEND_ACC_VALIDITY"/>
+           <parameter name="msisdn" value="601139293723"/>
+           <parameter name="extendDays" value="1"/>
+           <classes>
+               <class name="com.umtest.umb.testcases.UMBAccValidityExtension"></class>
+           </classes>
+       </test>
+
+
+
+
+
+       <test name="Prepaid Top-up">
+           <parameter name="planName" value="Unlimited Funz"/>
+           <parameter name="category" value="PREPAID_TOPUP"/>
+           <parameter name="msisdn" value="601139289598"/>
+           <parameter name="Receiver_msisdn" value=""/>
+           <parameter name="topupAmount" value="10"/>
+           <parameter name="identificationType" value="MyKad"/>
+           <classes>
+               <class name="com.umtest.umb.testcases.UMBTopUp"></class>
+           </classes>
+       </test>
+
+
+
+
+      <test name="GX to UMI Bundle CrossPurchase">
+          <parameter name="bundleName" value="UMICrossPurchase:UMI20"/>
+          <parameter name="msisdn" value="601139289598"/>
+          <parameter name="planType" value="PREPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase/prepaid/UMI20.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+
+
+      <test name="GX to UMI Bundle CrossPurchase">
+          <parameter name="bundleName" value="UMICrossPurchase:UMI20"/>
+          <parameter name="msisdn" value="601139289598"/>
+          <parameter name="planType" value="PREPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase/prepaid/UMI20.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+          </classes>
+      </test>
+
+          <test name="U25 Bundle Unsubscribe">
+          <parameter name="category" value="5GUnsubscribe"/>
+          <parameter name="msisdn" value="601139254885"/>
+          <parameter name="planType" value="PREPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase/prepaid/U25.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+          </classes>
+      </test>
+
+    <test name="U25 Bundle Purchase">
+            <parameter name="bundleName" value="5GDirectPurchaseU25:U25"/>
+        <parameter name="msisdn" value="601139254885"/>
+        <parameter name="planType" value="PREPAID"/>
+        <parameter name="testDataFile" value="bundlePurchase/prepaid/U25.json"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+
+
+    <test name="GX30 Bundle Purchase">
+        <parameter name="bundleName" value="GXDirectPurchase:GX30"/>
+        <parameter name="msisdn" value="601139289598"/>
+        <parameter name="planType" value="PREPAID"/>
+        <parameter name="testDataFile" value="bundlePurchase/prepaid/GX30.json"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+      <test name="UMI20 Bundle Unsubscribe">
+          <parameter name="category" value="UMIUnsubscribe"/>
+          <parameter name="msisdn" value="601139254885"/>
+          <parameter name="planType" value="PREPAID"/>
+          <parameter name="testDataFile" value="bundlePurchase/prepaid/UMI20.json"/>
+          <classes>
+              <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+          </classes>
+      </test>
+
+
+        <test name="UMI26 Bundle Purchase">
+        <parameter name="bundleName" value="UMIDirectPurchase:UMI26"/>
+        <parameter name="msisdn" value="601139289598"/>
+        <parameter name="planType" value="PREPAID"/>
+        <parameter name="testDataFile" value="bundlePurchase/prepaid/UMI26.json"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+     <test name="UMI36 Bundle Purchase">
+        <parameter name="bundleName" value="UMIDirectPurchase:UMI36"/>
+        <parameter name="msisdn" value="601139289598"/>
+        <parameter name="planType" value="PREPAID"/>
+        <parameter name="testDataFile" value="bundlePurchase/prepaid/UMI36.json"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+
+
+    <test name="Prepaid Credit Transfer">
+        <parameter name="category" value="CreditTransfer"/>
+        <parameter name="Sender_msisdn" value="601139267660"/>
+        <parameter name="Receiver_msisdn" value="601139260384"/>
+        <parameter name="transfer_amount" value="1"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbCreditTransfer"></class>
+        </classes>
+    </test>
+
+    <test name="Account Validity Extension">
+        <parameter name="category" value="EXTEND_ACC_VALIDITY"/>
+        <parameter name="msisdn" value="601139260384"/>
+        <parameter name="extendDays" value="1"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.UMBAccValidityExtension"></class>
+        </classes>
+    </test>
+
+    <test name="GX12 Bundle Re-Purchase">
+        <parameter name="bundleName" value="GXDirectRePurchase:GX12"/>
+        <parameter name="msisdn" value="601139260384"/>
+        <parameter name="planType" value="PREPAID"/>
+        <parameter name="testDataFile" value="bundlePurchase/prepaid/repurchase/unlimitedFunz-GX12-purchase2.json"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+    <test name="U35 Bundle Purchase">
+        <parameter name="bundleName" value="5GDirectPurchaseU35:U35"/>
+        <parameter name="msisdn" value="601139254885"/>
+        <parameter name="planType" value="PREPAID"/>
+        <parameter name="testDataFile" value="bundlePurchase/prepaid/U35.json"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+
+    <test name="U25 Bundle Purchase">
+        <parameter name="bundleName" value="5GDirectPurchaseU25:U25"/>
+        <parameter name="msisdn" value="601139254885"/>
+        <parameter name="planType" value="PREPAID"/>
+        <parameter name="testDataFile" value="bundlePurchase/prepaid/U25.json"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+    <test name="UMI26 Bundle Purchase">
+        <parameter name="bundleName" value="UMIDirectPurchase:UMI26"/>
+        <parameter name="msisdn" value="601139161626"/>
+        <parameter name="planType" value="PREPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+    <test name="UMI20 Bundle Purchase">
+        <parameter name="bundleName" value="UMIDirectPurchase:UMI20"/>
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="planType" value="PREPAID"/>
+        <parameter name="testDataFile" value="bundlePurchase/prepaid/UMI20.json"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+    <test name="Prepaid Top-up">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="category" value="PREPAID_TOPUP"/>
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="Receiver_msisdn" value=""/>
+        <parameter name="topupAmount" value="5"/>
+        <parameter name="identificationType" value="MyKad"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.UMBTopUp"></class>
+        </classes>
+    </test>
+
+    <test name="Prepaid Top-up for a friend">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="category" value="TOP-UP FOR FRIEND"/>
+        <parameter name="msisdn" value="60159806924"/>
+        <parameter name="Receiver_msisdn" value="601139260384"/>
+        <parameter name="topupAmount" value="5"/>
+        <parameter name="identificationType" value="MyKad"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.UMBTopUp"></class>
+        </classes>
+    </test>
+
+
+
+
+
+    <test name="UMI26 Bundle Purchase">
+        <parameter name="bundleName" value="UMIDirectPurchase:UMI26"/>
+        <parameter name="msisdn" value="601139161626"/>
+        <parameter name="planType" value="PREPAID"/>
+            <classes>
+                <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+            </classes>
+    </test>
+
+   <test name="UMI26 Bundle Unsubscribe">
+    <parameter name="category" value="UMIUnsubscribe"/>
+    <parameter name="msisdn" value="601139161626"/>
+    <parameter name="planType" value="PREPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+        </classes>
+    </test>
+
+    <test name="UMI30 Bundle Purchase">
+    <parameter name="bundleName" value="UMIDirectPurchase:UMI30"/>
+    <parameter name="msisdn" value="601139161626"/>
+    <parameter name="planType" value="PREPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+   <test name="UMI30 Bundle Unsubscribe">
+    <parameter name="category" value="UMIUnsubscribe"/>
+    <parameter name="msisdn" value="601139161626"/>
+    <parameter name="planType" value="PREPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+        </classes>
+    </test>
+
+    <test name="UMI36 Bundle Purchase">
+    <parameter name="bundleName" value="UMIDirectPurchase:UMI36"/>
+    <parameter name="msisdn" value="601139161626"/>
+    <parameter name="planType" value="PREPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+   <test name="UMI36 Bundle Unsubscribe">
+    <parameter name="category" value="UMIUnsubscribe"/>
+    <parameter name="msisdn" value="601139161626"/>
+    <parameter name="planType" value="PREPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+        </classes>
+    </test>
+
+     <test name="UMI38 Bundle Purchase">
+    <parameter name="bundleName" value="UMIDirectPurchase:UMI38"/>
+    <parameter name="msisdn" value="601139161626"/>
+    <parameter name="planType" value="PREPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+   <test name="UMI38 Bundle Unsubscribe">
+    <parameter name="category" value="UMIUnsubscribe"/>
+    <parameter name="msisdn" value="601139161626"/>
+    <parameter name="planType" value="PREPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+        </classes>
+    </test>
+
+    <test name="UMI50 Bundle Purchase">
+    <parameter name="bundleName" value="UMIDirectPurchase:UMI50"/>
+    <parameter name="msisdn" value="601139161626"/>
+    <parameter name="planType" value="PREPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+   <test name="UMI50 Bundle Unsubscribe">
+    <parameter name="category" value="UMIUnsubscribe"/>
+    <parameter name="msisdn" value="601139161626"/>
+    <parameter name="planType" value="PREPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+        </classes>
+    </test>
+
+    <test name="GX12 Bundle Purchase">
+    <parameter name="bundleName" value="GXDirectPurchase:GX12"/>
+    <parameter name="msisdn" value="601139161626"/>
+    <parameter name="planType" value="PREPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+   <test name="GX12 Bundle Unsubscribe">
+    <parameter name="category" value="GXUnsubscribe"/>
+    <parameter name="msisdn" value="601139161626"/>
+    <parameter name="planType" value="PREPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+        </classes>
+    </test>
+
+     <test name="UMI20 Bundle Purchase">
+    <parameter name="bundleName" value="UMIDirectPurchase:UMI20"/>
+    <parameter name="msisdn" value="601139161626"/>
+    <parameter name="planType" value="PREPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+   <test name="UMI Bundle Unsubscribe">
+    <parameter name="category" value="UMIUnsubscribe"/>
+    <parameter name="msisdn" value="601139161626"/>
+    <parameter name="planType" value="PREPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+        </classes>
+    </test>
+
+    <test name="UMI20 Bundle Purchase">
+    <parameter name="bundleName" value="UMIDirectPurchase:UMI20"/>
+    <parameter name="msisdn" value="601139161626"/>
+    <parameter name="planType" value="PREPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+
+   <test name="UMI Bundle Unsubscribe">
+    <parameter name="category" value="UMIUnsubscribe"/>
+    <parameter name="msisdn" value="601139161626"/>
+    <parameter name="planType" value="PREPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+        </classes>
+    </test>
+
+
+         -->
+</suite>

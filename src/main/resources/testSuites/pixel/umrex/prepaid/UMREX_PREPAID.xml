@@ -1,0 +1,513 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UMREX Regression">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+
+    <test name="UMREX Prepaid Registration - Max Line Check">
+        <parameter name="identificationType" value="NON-MALAYSIAN"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidMaxLineCheck" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--<test name="UMREX Prepaid - Top Up 30 RM - MYKAD Customer Negative">
+        <parameter name="msisdn" value="601139200000"/>
+        <parameter name="topUpAmount" value="30"/>
+        <parameter name="errorMessage" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidTopUp">
+                <methods>
+                    <include name="UMREXPrepaidTopUpDeactivatedMSISDN" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Bundle Registration Unlimited Funz - MB2">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="bundleName" value="Prepaid MB2"/>
+        <parameter name="topupAmount" value="5"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\newRegistration\registrationAndbundlePurchase\unlimitedFunz-MB2.json"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Registration - Unlimited Funz - MYKAD CUSTOMER">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="customerIdentificationType" value="MYKAD"/>
+        <parameter name="testDataFile" value="newRegistration/registrationOnly/unlimitedFunz.json"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaid" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<test name="UMREX Prepaid Bundle Registration Unlimited Funz - GX12">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="bundleName" value="GX12"/>
+        <parameter name="topupAmount" value="15"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\newRegistration\registrationAndbundlePurchase\unlimitedFunz-GX12.json"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<test name="UMREX Prepaid Bundle Registration Unlimited Funz - GX30">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="bundleName" value="GX30"/>
+        <parameter name="topupAmount" value="30"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\newRegistration\registrationAndbundlePurchase\unlimitedFunz-GX30.json"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Registration 5G Unlimited - U35">
+        <parameter name="planName" value="5G Prepaid Plan"/>
+        <parameter name="bundleName" value="U35"/>
+        <parameter name="topupAmount" value="30"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="newRegistration/registrationAndbundlePurchase/5GPrepaidPlan-U35.json"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<test name="UMREX Prepaid Registration 5G Unlimited - U25">
+        <parameter name="planName" value="5G Prepaid Plan"/>
+        <parameter name="bundleName" value="U25"/>
+        <parameter name="topupAmount" value="30"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="newRegistration/registrationAndbundlePurchase/5GPrepaidPlan-U25.json"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<test name="UMREX Prepaid Bundle Registration Unlimited Funz - UMI20">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="bundleName" value="UMI 20"/>
+        <parameter name="topupAmount" value="20"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\newRegistration\registrationAndbundlePurchase\unlimitedFunz-UMI20.json"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid - Top Up 30 RM - Passport Customer">
+        <parameter name="msisdn" value="601139260947"/>
+        <parameter name="topUpAmount" value="30"/>
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="identificationType" value="Passport"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidTopUp">
+                <methods>
+                    <include name="UMREXPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<test name="UMREX Prepaid - Top Up 30 RM - MYKAD Customer">
+        <parameter name="msisdn" value="601139273341"/>
+        <parameter name="topUpAmount" value="30"/>
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="identificationType" value="MyKad"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidTopUp">
+                <methods>
+                    <include name="UMREXPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Registration Unlimited Funz">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="msisdn" value="60159462205"/>
+        <parameter name="simno" value="880727400000086993"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaid" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="UMREX Prepaid Top Up - Multiple TopUp Within 5 minutes">
+        <parameter name="msisdn" value="60159001350"/>
+        <parameter name="topUpAmount" value="10"/>
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="planType" value="PREPAID"/>
+        <parameter name="errorMessage" value="The same transaction was performed within the last 5 minutes to the number."/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidTopUp">
+                <methods>
+                    <include name="UMREXPrepaidTopUpMultipleTopUpWithinFiveMinutes" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+   <test name="UMREX Prepaid - Top Up 10 RM">
+        <parameter name="msisdn" value="60159001350"/>
+        <parameter name="topUpAmount" value="10"/>
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="planType" value="PREPAID"/>
+        <parameter name="identificationType" value="Passport"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidTopUp">
+                <methods>
+                    <include name="UMREXPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Registration Unlimited Funz Topup 10-1">
+      <parameter name="planName" value="Unlimited Funz"/>
+      <parameter name="topupAmount" value="100"/>
+      <parameter name="msisdn" value="601139276620"/>
+      <parameter name="simno" value="896018119149922374"/>
+      <classes>
+          <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+              <methods>
+                  <include name="UMREXRegistrationPrepaidTopup" />
+              </methods>
+          </class>
+      </classes>
+  </test>
+
+    <test name="UMREX Prepaid Registration Unlimited Funz Topup 10-2">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="topupAmount" value="100"/>
+        <parameter name="msisdn" value="601139257177"/>
+        <parameter name="simno" value="896018119149922375"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidTopup" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="UMREX Prepaid Bundle Registration Unlimited Funz - UMI 30">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="bundleName" value="UMI 30"/>
+        <parameter name="topupAmount" value="30"/>
+        <parameter name="msisdn" value="60159001350"/>
+        <parameter name="simno" value="880727300000024759"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+  <test name="UMREX Prepaid Registration - Max Line Check - Malaysian">
+        <parameter name="identificationType" value="PASSPORT"/>
+
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidMaxLineCheck" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+  <test name="UMREX Prepaid - Top Up 10 RM - Passport Customer">
+          <parameter name="msisdn" value="60182147288"/>
+          <parameter name="topUpAmount" value="10"/>
+          <parameter name="planName" value="Unlimited Funz"/>
+          <parameter name="identificationType" value="Passport"/>
+          <classes>
+              <class name="com.umtest.umrex.testcases.UMREXPrepaidTopUp">
+                  <methods>
+                      <include name="UMREXPrepaidTopUp" />
+                  </methods>
+              </class>
+          </classes>
+    </test>
+
+<test name="UMREX Prepaid - Top Up 10 RM - MYKAD Customer">
+        <parameter name="msisdn" value="601139273341"/>
+        <parameter name="topUpAmount" value="10"/>
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="identificationType" value="MyKad"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidTopUp">
+                <methods>
+                    <include name="UMREXPrepaidTopUp" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+  <test name="UMREX Prepaid Registration Unlimited Funz Topup 10">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="topupAmount" value="100"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidTopup" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Top Up - Deactivated MSISDN or Invalid MSISDN">
+        <parameter name="msisdn" value="60000000000"/>
+        <parameter name="topUpAmount" value="10"/>
+        <parameter name="errorMessage" value="Invalid MSISDN. Please try again"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidTopUp">
+                <methods>
+                    <include name="UMREXPrepaidTopUpDeactivatedMSISDN" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+   <test name="UMREX Prepaid Change Rate Plan - Unlimited Power - PASSPORT Customer">
+        <parameter name="newRatePlanName" value="Unlimited Power"/>
+        <parameter name="currentRatePlanName" value="Unlimited Funz"/>
+        <parameter name="msisdn" value="60182147292"/>
+        <parameter name="changeRatePlanType" value="Change Prepaid Rate Plan"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidChangeRatePlan">
+                <methods>
+                    <include name="UMREXPrepaidChangeRatePlan" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Change Rate Plan - Unlimited Power - MYKAD Customer">
+        <parameter name="newRatePlanName" value="Unlimited Funz"/>
+        <parameter name="currentRatePlanName" value="Unlimited Power"/>
+        <parameter name="msisdn" value="60182147292"/>
+        <parameter name="changeRatePlanType" value="Change Prepaid Rate Plan"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidChangeRatePlan">
+                <methods>
+                    <include name="UMREXPrepaidChangeRatePlan" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Change Rate Plan - Power - PASSPORT Customer">
+        <parameter name="newRatePlanName" value="Unlimited Power"/>
+        <parameter name="currentRatePlanName" value="Unlimited Funz"/>
+        <parameter name="msisdn" value="60182147292"/>
+        <parameter name="changeRatePlanType" value="Change Prepaid Rate Plan"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidChangeRatePlan">
+                <methods>
+                    <include name="UMREXPrepaidChangeRatePlan" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Change Rate Plan - Power - MYKAD Customer">
+        <parameter name="newRatePlanName" value="Unlimited Power"/>
+        <parameter name="currentRatePlanName" value="Unlimited Funz"/>
+        <parameter name="msisdn" value="60182146961"/>
+        <parameter name="changeRatePlanType" value="Change Prepaid Rate Plan"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidChangeRatePlan">
+                <methods>
+                    <include name="UMREXPrepaidChangeRatePlan" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Change Rate Plan - Unlimited Power - PASSPORT Customer1">
+        <parameter name="newRatePlanName" value="Unlimited Power"/>
+        <parameter name="currentRatePlanName" value="Unlimited Funz"/>
+        <parameter name="msisdn" value="601170244012"/>
+        <parameter name="changeRatePlanType" value="Change Prepaid Rate Plan"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidChangeRatePlan">
+                <methods>
+                    <include name="UMREXPrepaidChangeRatePlan" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+   <test name="UMREX Prepaid Change Rate Plan - Unlimited Power - MYKAD Customer1">
+        <parameter name="newRatePlanName" value="Unlimited Funz"/>
+        <parameter name="currentRatePlanName" value="Unlimited Power"/>
+        <parameter name="msisdn" value="60182147292"/>
+        <parameter name="changeRatePlanType" value="Change Prepaid Rate Plan"/>
+        <parameter name="identificationType" value="PASSPORT"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidChangeRatePlan">
+                <methods>
+                    <include name="UMREXPrepaidChangeRatePlan" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Registration 5G Unlimited - MYKAD Customer">
+        <parameter name="newRatePlanName" value="5G Prepaid Plan"/>
+        <parameter name="msisdn" value="601139276793"/>
+        <parameter name="identificationType" value="MYKAD"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaid" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Bundle Registration Unlimited Funz - MB15">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="bundleName" value="Prepaid MB15"/>
+        <parameter name="topupAmount" value="15"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\newRegistration\registrationAndbundlePurchase\unlimitedFunz-MB15.json"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Bundle Registration Unlimited Funz - MB40">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="bundleName" value="Prepaid MB40"/>
+        <parameter name="topupAmount" value="40"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\newRegistration\registrationAndbundlePurchase\unlimitedFunz-MB40.json"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Bundle Registration Unlimited Funz - MB68">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="bundleName" value="Prepaid MB68"/>
+        <parameter name="topupAmount" value="68"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\newRegistration\registrationAndbundlePurchase\unlimitedFunz-MB68.json"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Bundle Registration Unlimited Funz - MB128">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="bundleName" value="Prepaid MB128"/>
+        <parameter name="topupAmount" value="130"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\newRegistration\registrationAndbundlePurchase\unlimitedFunz-MB128.json"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Bundle Registration Unlimited Funz - GX38">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="bundleName" value="GX38"/>
+        <parameter name="topupAmount" value="38"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\newRegistration\registrationAndbundlePurchase\unlimitedFunz-GX38.json"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UMREX Prepaid Bundle Registration Unlimited Funz - UMI36">
+        <parameter name="planName" value="Unlimited Funz"/>
+        <parameter name="bundleName" value="UMI 36"/>
+        <parameter name="topupAmount" value="50"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <parameter name="testDataFile" value="\newRegistration\registrationAndbundlePurchase\unlimitedFunz-UMI36.json"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPrepaidBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    -->
+
+</suite>

@@ -1,0 +1,16 @@
+{
+"ratePlanName":"Unlimited Funz",
+"bundleName":"NA",
+"serviceCategory":[
+{"type":"Data",
+	"services":[
+					{					
+						"serviceName":"5G Prepaid Free Basic Data",
+						"quota":"1.00 GB left",
+						"usage":"0.00/1.00 GB Used",
+						"validity":"Valid For 1 day(s)"
+                    }
+               ]
+}
+]
+}

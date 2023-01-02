@@ -1,0 +1,564 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UMREX Regression">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+
+
+    <test name="UMREX Postpaid Registration Postpaid 99">
+        <parameter name="planName" value="Postpaid P99"/>
+        <parameter name="accountType" value="POSTPAID"/>
+        <parameter name="testDataFile" value="\bundlePurchase\postpaid\P99Freebies.json"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                <methods>
+                    <include name="UMREXRegistrationPostpaid" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--
+
+  <test name="UMREX Postpaid Registration U Postpaid 98;U FamilyShare">
+      <parameter name="planName" value="U Postpaid 98;U FamilyShare"/>
+      <parameter name="accountType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="\bundlePurchase\postpaid\Postpaid 98.json;\bundlePurchase\postpaid\Family 38.json"/>
+      <classes>
+          <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+              <methods>
+                  <include name="UMREXRegistrationPostpaid_Multiline" />
+              </methods>
+          </class>
+      </classes>
+  </test>
+
+   <test name="UMREX Postpaid Registration Postpaid 99">,
+       <parameter name="planName" value="Postpaid P99"/>
+       <parameter name="accountType" value="POSTPAID"/>
+       <parameter name="testDataFile" value="\bundlePurchase\postpaid\P99Freebies.json"/>
+       <classes>
+           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+               <methods>
+                   <include name="UMREXRegistrationPostpaid" />
+               </methods>
+           </class>
+       </classes>
+   </test>
+
+
+    <test name="UMREX Postpaid ChangeRatePlan from Postpaid GX68 to U Postpaid 98">
+        <parameter name="NewplanName" value="U Postpaid 98"/>
+        <parameter name="msisdn" value="60182146903"/>
+        <parameter name="ChangeRateplantype" value="Change Postpaid Rate Plan"/>
+        <parameter name="accountType" value="POSTPAID"/>
+        <parameter name="testDataFile" value="\bundlePurchase\postpaid\Postpaid 98.json"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPostpaidChangeRatePlan">
+                <methods>
+                    <include name="UMREXPostpaidChangePlan" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+
+
+        <test name="UMREX Postpaid ChangeRatePlan from U Postpaid 68 to U Postpaid 98">
+           <parameter name="NewplanName" value="U Postpaid 98"/>
+           <parameter name="msisdn" value="60182146985"/>
+           <parameter name="ChangeRateplantype" value="Change Postpaid Rate Plan"/>
+           <parameter name="accountType" value="POSTPAID"/>
+           <parameter name="testDataFile" value="\bundlePurchase\postpaid\Postpaid 98.json"/>
+           <classes>
+               <class name="com.umtest.umrex.testcases.UMREXPostpaidChangeRatePlan">
+                   <methods>
+                       <include name="UMREXPostpaidChangePlan" />
+                   </methods>
+               </class>
+           </classes>
+       </test>
+
+        <test name="UMREX Postpaid Registration U Postpaid 98;U FamilyShare">
+           <parameter name="planName" value="U Postpaid 98;U FamilyShare"/>
+           <parameter name="accountType" value="POSTPAID"/>
+           <parameter name="testDataFile" value="\bundlePurchase\postpaid\Postpaid 98.json;\bundlePurchase\postpaid\Family 38.json"/>
+           <classes>
+               <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                   <methods>
+                       <include name="UMREXRegistrationPostpaid_Multiline" />
+                   </methods>
+               </class>
+           </classes>
+       </test>
+
+       <test name="UMREX Postpaid Registration U Postpaid 68 ExistingLine">
+           <parameter name="planName" value="U Postpaid 68"/>
+           <parameter name="existingmsisdn" value="60182146983"/>
+           <parameter name="accountType" value="POSTPAID"/>
+           <parameter name="testDataFile" value="\bundlePurchase\postpaid\Postpaid 68.json"/>
+           <classes>
+               <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                   <methods>
+                       <include name="UMREXRegistrationPostpaid_Existingline" />
+                   </methods>
+               </class>
+           </classes>
+       </test>
+
+       <test name="UMREX Postpaid Registration U Postpaid 68 ExistingLine">
+          <parameter name="planName" value="U Postpaid 68"/>
+          <parameter name="existingmsisdn" value="60182146983"/>
+          <parameter name="accountType" value="POSTPAID"/>
+          <parameter name="testDataFile" value="\bundlePurchase\postpaid\Postpaid 68.json"/>
+          <classes>
+              <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                  <methods>
+                      <include name="UMREXRegistrationPostpaid_Existingline" />
+                  </methods>
+              </class>
+          </classes>
+       </test>
+
+
+
+
+            <test name="UMREX Postpaid Registration U Postpaid 98;U FamilyShare">
+                <parameter name="planName" value="U Postpaid 98;U FamilyShare"/>
+                <parameter name="accountType" value="POSTPAID"/>
+                <parameter name="testDataFile" value="\bundlePurchase\postpaid\Postpaid 98.json;\bundlePurchase\postpaid\Family 38.json"/>
+                <classes>
+                    <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                        <methods>
+                            <include name="UMREXRegistrationPostpaid_Multiline" />
+                        </methods>
+                    </class>
+                </classes>
+            </test>
+
+
+
+
+
+                   <test name="UMREX Postpaid Registration U Postpaid 68 ExistingLine">
+                       <parameter name="planName" value="U Postpaid 68"/>
+                       <parameter name="existingmsisdn" value="60182149671"/>
+                       <parameter name="accountType" value="POSTPAID"/>
+                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\Postpaid 68.json"/>
+                       <classes>
+                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                               <methods>
+                                   <include name="UMREXRegistrationPostpaid_Existingline" />
+                               </methods>
+                           </class>
+                       </classes>
+                   </test>
+
+       <test name="UMREX Postpaid Registration Postpaid 99">
+            <parameter name="planName" value="Postpaid P99"/>
+            <parameter name="accountType" value="POSTPAID"/>
+            <parameter name="testDataFile" value="\bundlePurchase\postpaid\P99Freebies.json"/>
+            <classes>
+                <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                    <methods>
+                        <include name="UMREXRegistrationPostpaid" />
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+
+                   <test name="UMREX Postpaid Registration Postpaid 38 ExistingLine">
+                       <parameter name="planName" value="Postpaid 38"/>
+                       <parameter name="existingmsisdn" value="60182149671"/>
+                       <parameter name="accountType" value="POSTPAID"/>
+                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\P38Freebies.json"/>
+                       <classes>
+                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                               <methods>
+                                   <include name="UMREXRegistrationPostpaid_Existingline" />
+                               </methods>
+                           </class>
+                       </classes>
+                   </test>
+
+                      <test name="UMREX Postpaid Registration Postpaid 38">
+                          <parameter name="planName" value="U Postpaid 38"/>
+                          <parameter name="accountType" value="POSTPAID"/>
+                          <parameter name="testDataFile" value="\bundlePurchase\postpaid\P38Freebies.json"/>
+                          <classes>
+                              <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                  <methods>
+                                      <include name="UMREXRegistrationPostpaid" />
+                                  </methods>
+                              </class>
+                          </classes>
+                      </test>
+
+
+
+
+                          <test name="UMREX Postpaid Registration U Postpaid 98;U FamilyShare">
+                             <parameter name="planName" value="U Postpaid 98;U FamilyShare"/>
+                             <parameter name="accountType" value="POSTPAID"/>
+                             <parameter name="testDataFile" value="\bundlePurchase\postpaid\Postpaid 98.json;\bundlePurchase\postpaid\Family 38.json"/>
+                             <classes>
+                                 <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                     <methods>
+                                         <include name="UMREXRegistrationPostpaid_Multiline" />
+                                     </methods>
+                                 </class>
+                             </classes>
+                         </test>
+
+
+                        <test name="UMREX Postpaid Registration Postpaid 38">
+                          <parameter name="planName" value="U Postpaid 38"/>
+                          <parameter name="accountType" value="POSTPAID"/>
+                          <parameter name="testDataFile" value="\bundlePurchase\postpaid\P38Freebies.json"/>
+                          <classes>
+                              <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                  <methods>
+                                      <include name="UMREXRegistrationPostpaid" />
+                                  </methods>
+                              </class>
+                          </classes>
+                      </test>
+
+
+                         <test name="UMREX Postpaid Registration Postpaid 99">
+                             <parameter name="planName" value="Postpaid P99"/>
+                             <parameter name="accountType" value="POSTPAID"/>
+                             <parameter name="testDataFile" value="\bundlePurchase\postpaid\P99Freebies.json"/>
+                             <classes>
+                                 <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                     <methods>
+                                         <include name="UMREXRegistrationPostpaid" />
+                                     </methods>
+                                 </class>
+                             </classes>
+                         </test>
+
+
+                                  <test name="UMREX Postpaid Registration UBUSIM WB48">
+                                   <parameter name="planName" value="UBUSIM WB48"/>
+                                   <parameter name="accountType" value="POSTPAID"/>
+                                   <parameter name="testDataFile" value="\bundlePurchase\postpaid\WB48Freebies.json"/>
+                                   <classes>
+                                       <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                           <methods>
+                                               <include name="UMREXRegistrationPostpaid_Broadband" />
+                                           </methods>
+                                       </class>
+                                   </classes>
+                               </test>
+
+                                   <test name="UMREX Postpaid Registration Postpaid 38">
+                                       <parameter name="planName" value="Postpaid 38"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\P38Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXRegistrationPostpaid" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid Registration Postpaid P48">
+                                       <parameter name="planName" value="Postpaid P48"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\P48Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXRegistrationPostpaid" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid Registration Postpaid GX50">
+                                       <parameter name="planName" value="Postpaid GX50"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\GX50Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXRegistrationPostpaid" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid Registration Postpaid GX68">
+                                       <parameter name="planName" value="Postpaid GX68"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\GX68Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXRegistrationPostpaid" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid Registration Postpaid P79">
+                                       <parameter name="planName" value="Postpaid P79"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\P79Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXRegistrationPostpaid" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid Registration Postpaid P99">
+                                       <parameter name="planName" value="Postpaid P99"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\P99Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXRegistrationPostpaid" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid Registration Postpaid P139">
+                                       <parameter name="planName" value="Postpaid P139"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\P139Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXRegistrationPostpaid" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid Registration Postpaid U28">
+                                       <parameter name="planName" value="U28 Rate Plan"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\U28Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXRegistrationPostpaid" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid Registration Postpaid 38 ExistingLine">
+                                       <parameter name="planName" value="Postpaid 38"/>
+                                       <parameter name="existingmsisdn" value="60182149671"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\P38Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXRegistrationPostpaid_Existingline" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid Registration Postpaid P99 ExistingLine">
+                                       <parameter name="planName" value="Postpaid P99"/>
+                                       <parameter name="existingmsisdn" value="60182149671"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\P99Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXRegistrationPostpaid_Existingline" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid Registration Postpaid GX68 ExistingLine">
+                                       <parameter name="planName" value="Postpaid GX68"/>
+                                       <parameter name="existingmsisdn" value="60182149671"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\GX68Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXRegistrationPostpaid_Existingline" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid Registration UBUSIM WB48">
+                                       <parameter name="planName" value="UBUSIM WB48"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\WB48Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXRegistrationPostpaid_Broadband" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid Registration UBUSIM WB68">
+                                       <parameter name="planName" value="UBUSIM WB68"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\WB68Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXRegistrationPostpaid_Broadband" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                  <test name="UMREX Postpaid Registration UBUSIM WB88">
+                                       <parameter name="planName" value="UBUSIM WB88"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\WB88Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXRegistrationPostpaid_Broadband" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid Registration UBUSIM WB128">
+                                       <parameter name="planName" value="UBUSIM WB128"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\WB128Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXRegistrationPostpaid_Broadband" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid Registration Postpaid 38;Postpaid GX68;Postpaid P99">
+                                       <parameter name="planName" value="Postpaid 38;Postpaid GX68;Postpaid P99"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\WB128Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXRegistrationPostpaid_Multiline" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid ChangeRatePlan from Postpaid 38 to Postpaid GX68">
+                                       <parameter name="NewplanName" value="Postpaid GX68"/>
+                                       <parameter name="msisdn" value="60182149671"/>
+                                       <parameter name="ChangeRateplantype" value="Change Postpaid Rate Plan"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\GX68Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidChangeRatePlan">
+                                               <methods>
+                                                   <include name="UMREXPostpaidChangePlan" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid ChangeRatePlan from Postpaid GX68 to Postpaid P79">
+                                       <parameter name="NewplanName" value="Postpaid P79"/>
+                                       <parameter name="msisdn" value="60182149671"/>
+                                       <parameter name="ChangeRateplantype" value="Change Postpaid Rate Plan"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\P79Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidChangeRatePlan">
+                                               <methods>
+                                                   <include name="UMREXPostpaidChangePlan" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid ChangeRatePlan from Postpaid P79 to Postpaid P99">
+                                       <parameter name="NewplanName" value="Postpaid P99"/>
+                                       <parameter name="msisdn" value="60182149671"/>
+                                       <parameter name="ChangeRateplantype" value="Change Postpaid Rate Plan"/>
+                                       <parameter name="accountType" value="POSTPAID"/>
+                                       <parameter name="testDataFile" value="\bundlePurchase\postpaid\P99Freebies.json"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidChangeRatePlan">
+                                               <methods>
+                                                   <include name="UMREXPostpaidChangePlan" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid ChangeRatePlan">
+                                         <parameter name="NewplanName" value="Postpaid P139;S20 P139;S20 P139"/>
+                                         <parameter name="msisdn" value="60183101006;60183100993;60183100745"/>
+                                         <parameter name="ChangeRateplantype" value="Family Change Postpaid Rate Plan"/>
+                                         <parameter name="accountType" value="POSTPAID"/>
+                                         <parameter name="testDataFile" value="\bundlePurchase\postpaid\P139Freebies.json"/>
+                                         <classes>
+                                             <class name="com.umtest.umrex.testcases.UMREXPostpaidChangeRatePlan">
+                                             <methods>
+                                                     <include name="UMREXPostpaidFamilyChangePlan" />
+                                             </methods>
+                                             </class>
+                                         </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid suspend line perform change Plan">
+                                       <parameter name="msisdn" value="60182146885"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidChangeRatePlan">
+                                               <methods>
+                                                   <include name="UMREXPostpaidsuspendChangePlan" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid bar line perform change Plan">
+                                       <parameter name="msisdn" value="60182149047"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidChangeRatePlan">
+                                               <methods>
+                                                   <include name="UMREXPostpaidbarChangePlan" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                   <test name="UMREX Postpaid MaxLine Check">
+                                       <parameter name="existingmsisdn" value="60182002983"/>
+                                       <classes>
+                                           <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+                                               <methods>
+                                                   <include name="UMREXPostpaid_Maxlinecheck" />
+                                               </methods>
+                                           </class>
+                                       </classes>
+                                   </test>
+
+                                    -->
+
+</suite>

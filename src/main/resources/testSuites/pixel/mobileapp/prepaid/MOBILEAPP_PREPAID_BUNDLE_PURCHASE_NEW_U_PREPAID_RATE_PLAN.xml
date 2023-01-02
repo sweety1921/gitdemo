@@ -1,0 +1,256 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Mobile App Prepaid Regression">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+
+    <!--**************************  New U Prepaid Rate Plan  **************************-->
+<!--
+    <test name="[Mobile Apps Prepaid] Bundle Purchase UMI 20 - New U Prepaid">
+        <parameter name="msisdn" value="60182147029"/>
+        <parameter name="bundleName" value="UMI 20"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase UMI 26 - New U Prepaid">
+        <parameter name="msisdn" value="60182147029"/>
+        <parameter name="bundleName" value="UMI 26"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase UMI 30 - New U Prepaid">
+        <parameter name="msisdn" value="60182147029"/>
+        <parameter name="bundleName" value="UMI 30"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase UMI 38 - New U Prepaid">
+        <parameter name="msisdn" value="60182147029"/>
+        <parameter name="bundleName" value="UMI 38"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase UMI 50 - New U Prepaid">
+        <parameter name="msisdn" value="60182147029"/>
+        <parameter name="bundleName" value="UMI 50"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase UMI 36 - New U Prepaid">
+        <parameter name="msisdn" value="60182147029"/>
+        <parameter name="bundleName" value="UMI 36"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase GX12 - New U Prepaid">
+        <parameter name="msisdn" value="60182147031"/>
+        <parameter name="bundleName" value="GX12"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase GX30 - New U Prepaid">
+        <parameter name="msisdn" value="60182147031"/>
+        <parameter name="bundleName" value="GX30"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase GX38 - New U Prepaid">
+        <parameter name="msisdn" value="60182147031"/>
+        <parameter name="bundleName" value="GX38"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase GT30 - New U Prepaid">
+         <parameter name="msisdn" value="60182147032"/>
+         <parameter name="bundleName" value="GT30"/>
+         <parameter name="accountType" value="Prepaid"/>
+         <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                   <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+         </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase GameOnz18 - New U Prepaid">
+        <parameter name="msisdn" value="60182147034"/>
+        <parameter name="bundleName" value="GameOnz18"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase GameOnz50 - New U Prepaid">
+        <parameter name="msisdn" value="60182147034"/>
+        <parameter name="bundleName" value="GameOnz50"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase GameOnz70 - New U Prepaid">
+        <parameter name="msisdn" value="60182147034"/>
+        <parameter name="bundleName" value="GameOnz70"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase MB WEEK - New U Prepaid">
+        <parameter name="msisdn" value="60182147035"/>
+        <parameter name="bundleName" value="MBWEEK"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase MB 15 - New U Prepaid">
+        <parameter name="msisdn" value="60182147035"/>
+        <parameter name="bundleName" value="MB 15"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase MB 40 - New U Prepaid">
+        <parameter name="msisdn" value="60182147035"/>
+        <parameter name="bundleName" value="MB 40"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase MB 68 - New U Prepaid">
+        <parameter name="msisdn" value="60182147035"/>
+        <parameter name="bundleName" value="MB 68"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase MB 128 - New U Prepaid">
+        <parameter name="msisdn" value="60182147035"/>
+        <parameter name="bundleName" value="MB 128"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+    <test name="[Mobile Apps Prepaid] Bundle Purchase EPIKKK Video3 - New U Prepaid">
+        <parameter name="msisdn" value="60182147036"/>
+        <parameter name="bundleName" value="EPIKKK Video3"/>
+        <parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="MobileAppPurchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

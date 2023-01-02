@@ -1,0 +1,195 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MOBILEAPP Regression">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+
+
+    <test name="Mobile App Postpaid Bundle Purchase - U Postpaid 68 Rate Plan - Data Booster 10GB">
+        <parameter name="msisdn" value="60182146989"/>
+        <parameter name="bundleName" value="Data Booster"/>
+        <parameter name="accountType" value="POSTPAID"/>
+        <parameter name="testDataFile" value="\bundlePurchase\postpaid\HotspotBooster5GB.json"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+                <methods>
+                    <include name="purchaseBundle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--
+  <test name="Mobile App Postpaid Bundle Purchase - Postpaid P99 Rate Plan - U SMS Plus">
+      <parameter name="msisdn" value="60182146951"/>
+      <parameter name="bundleName" value="Hotspot Booster"/>
+      <parameter name="accountType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="\bundlePurchase\postpaid\USMSPlus.json"/>
+      <classes>
+          <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+              <methods>
+                  <include name="purchaseBundle" />
+              </methods>
+          </class>
+      </classes>
+  </test>
+
+
+
+  <test name="Mobile App Postpaid Bundle Purchase - U Postpaid 68 Rate Plan - SMS Plus">
+      <parameter name="msisdn" value="60182146989"/>
+      <parameter name="bundleName" value="SMS Plus"/>
+      <parameter name="accountType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="\bundlePurchase\postpaid\SMSPlus.json"/>
+      <classes>
+          <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+              <methods>
+                  <include name="purchaseBundle" />
+              </methods>
+          </class>
+      </classes>
+  </test>
+
+  <test name="Mobile App Postpaid Bundle Purchase - U Postpaid 68 Rate Plan - SMS Plus">
+      <parameter name="msisdn" value="60182146989"/>
+      <parameter name="bundleName" value="SMS Plus"/>
+      <parameter name="accountType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="\bundlePurchase\postpaid\SMSPlus.json"/>
+      <classes>
+          <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+              <methods>
+                  <include name="purchaseBundle" />
+              </methods>
+          </class>
+      </classes>
+  </test>
+
+
+
+  <test name="Mobile App Postpaid Bundle Purchase - U Postpaid 68 Rate Plan - U SMS Plus">
+      <parameter name="msisdn" value="60182146989"/>
+      <parameter name="bundleName" value="U SMS Plus"/>
+      <parameter name="accountType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="\bundlePurchase\postpaid\USMSPlus.json"/>
+      <classes>
+          <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+              <methods>
+                  <include name="purchaseBundle" />
+              </methods>
+          </class>
+      </classes>
+  </test>
+
+  <test name="Mobile App Postpaid Bundle Purchase - U Postpaid 98 Rate Plan - SMS Plus">
+      <parameter name="msisdn" value="60182146981"/>
+      <parameter name="bundleName" value="SMS Plus"/>
+      <parameter name="accountType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="\bundlePurchase\postpaid\SMSPlus.json"/>
+      <classes>
+          <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+              <methods>
+                  <include name="purchaseBundle" />
+              </methods>
+          </class>
+      </classes>
+  </test>
+
+  <test name="Mobile App Postpaid Bundle Purchase - U Postpaid 98 Rate Plan - U SMS Plus">
+      <parameter name="msisdn" value="60182146981"/>
+      <parameter name="bundleName" value="U SMS Plus"/>
+      <parameter name="accountType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="\bundlePurchase\postpaid\USMSPlus.json"/>
+      <classes>
+          <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+              <methods>
+                  <include name="purchaseBundle" />
+              </methods>
+          </class>
+      </classes>
+  </test>
+
+  <test name="Mobile App Postpaid Bundle Purchase - U Postpaid 38 Rate Plan - SMS Plus">
+      <parameter name="msisdn" value="60182147595"/>
+      <parameter name="bundleName" value="SMS Plus"/>
+      <parameter name="accountType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="\bundlePurchase\postpaid\SMSPlus.json"/>
+      <classes>
+          <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+              <methods>
+                  <include name="purchaseBundle" />
+              </methods>
+          </class>
+      </classes>
+  </test>
+  <test name="Mobile App Postpaid Bundle Purchase - U Postpaid 38 Rate Plan - U SMS Plus">
+      <parameter name="msisdn" value="60182147595"/>
+      <parameter name="bundleName" value="U SMS Plus"/>
+      <parameter name="accountType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="\bundlePurchase\postpaid\USMSPlus.json"/>
+      <classes>
+          <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+              <methods>
+                  <include name="purchaseBundle" />
+              </methods>
+          </class>
+      </classes>
+  </test>
+  <test name="Mobile App Postpaid Bundle Purchase -  Postpaid P99 Rate Plan - SMS Plus">
+      <parameter name="msisdn" value="60182146951"/>
+      <parameter name="bundleName" value="SMS Plus"/>
+      <parameter name="accountType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="\bundlePurchase\postpaid\SMSPlus.json"/>
+      <classes>
+          <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+              <methods>
+                  <include name="purchaseBundle" />
+              </methods>
+          </class>
+      </classes>
+  </test>
+  <test name="Mobile App Postpaid Bundle Purchase - Postpaid P99 Rate Plan - U SMS Plus">
+      <parameter name="msisdn" value="60182146951"/>
+      <parameter name="bundleName" value="U SMS Plus"/>
+      <parameter name="accountType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="\bundlePurchase\postpaid\USMSPlus.json"/>
+      <classes>
+          <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+              <methods>
+                  <include name="purchaseBundle" />
+              </methods>
+          </class>
+      </classes>
+  </test>
+
+
+
+
+  <test name="Mobile App Postpaid Bundle Purchase - U Postpaid 68 Rate Plan - Data Booster 10GB">
+      <parameter name="msisdn" value="60182146989"/>
+      <parameter name="bundleName" value="Data Booster 10GB"/>
+      <parameter name="accountType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="\bundlePurchase\postpaid\DataBooster10GB.json"/>
+      <classes>
+          <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+              <methods>
+                  <include name="purchaseBundle" />
+              </methods>
+          </class>
+      </classes>
+  </test>
+  <test name="Mobile App Postpaid Bundle Purchase - U Postpaid 68 Rate Plan - Hotspot Booster 5GB">
+      <parameter name="msisdn" value="60182146989"/>
+      <parameter name="bundleName" value="Hotspot Booster 5GB"/>
+      <parameter name="accountType" value="POSTPAID"/>
+      <parameter name="testDataFile" value="\bundlePurchase\postpaid\DataBooster5GB.json"/>
+      <classes>
+          <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+              <methods>
+                  <include name="purchaseBundle" />
+              </methods>
+          </class>
+      </classes>
+  </test>
+-->
+</suite>
+

@@ -1,0 +1,40 @@
+{
+"ratePlanName":"Unlimited Funz",
+"bundleName":"NA",
+"serviceCategory":[
+{"type":"Data",
+	"services":[
+					{					
+						"serviceName":"GX30-DATA",
+						"quota":"Unlimited",
+						"usage":"My Usage 0.00 MB",
+						"validity":"Valid For 30 day(s)"
+                    },
+					{					
+						"serviceName":"GX30-MOBILE-HOTSPOT",
+						"quota":"6.00 GB left",
+						"usage":"0.00/6.00 GB Used",
+						"validity":"Valid For 30 day(s)"
+                    },
+					{					
+						"serviceName":"Free Activation Internet",
+						"quota":"200.00 MB left",
+						"usage":"0.00/200.00 MB Used",
+						"validity":"Valid For 5 day(s)"
+                    },
+					{					
+						"serviceName":"Free Basic Internet",
+						"quota":"1.00 GB left",
+						"usage":"0.00/1.00 GB Used",
+						"validity":"NA"
+                    },																								
+					{					
+						"serviceName":"FREE INTERNET FOR SOCIAL, MESSAGING & GAMING",
+						"quota":"Unlimited",
+						"usage":"My Usage 0.00 MB",
+						"validity":"NA"
+                    }
+               ]
+}
+]
+}

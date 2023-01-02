@@ -1,0 +1,38 @@
+{
+"ratePlanName":"Unlimited Funz",
+"bundleName":"UMI20-REPURCHASE1",
+"serviceCategory":[
+{"type":"Data",
+	"services":[
+					{					
+						"serviceName":"UMI20-HIGH-SPEED DATA",
+						"quota":"1.50 GB left",
+						"usage":"0.00/1.50 GB Used",
+						"validity":"Valid For 31 day(s)"
+                    },
+					{					
+						"serviceName":"UMI20-VIDEO-ONZ",
+						"quota":"500.00 MB left",
+						"usage":"0.00/500.00 MB Used",
+						"validity":"NA"
+                    },
+					{					
+						"serviceName":"UMI20-MUSIC-ONZ",
+						"quota":"Unlimited",
+						"usage":"My Usage 0.00 MB",
+						"validity":"NA"
+                    }
+               ]
+},
+{"type":"Voice",
+	"services":[
+					{					
+						"serviceName":"UMI20: VOICE - ALL NETWORK",
+						"quota":"40.00 MINS left",
+						"usage":"0.00/40.00 MINS Used",
+						"validity":"NA"
+                    }
+               ]
+}
+]
+}

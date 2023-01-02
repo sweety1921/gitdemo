@@ -1,0 +1,14 @@
+{
+"custIDStartDigits":"900101",
+"custNameStartChars":"TEST AUTO T",
+"custGender":"Male",
+"custDOBDD":"01",
+"custDOBMM":"01",
+"custDOBYYYY":"1990",
+"custAddress":"197, Jalan Klang Lama",
+"custCity":"KUALA LUMPUR",
+"custState":"KUALA LUMPUR",
+"custPostCode":"58300",
+"custEmail":"TEST@U.COM.MY",
+"custNumber":"60182143456"
+}

@@ -1,0 +1,16 @@
+{
+"ratePlanName":"Family 38",
+"bundleName":"U Talk Plus",
+"serviceCategory":[
+{"type":"Voice",
+	"services":[
+					{					
+						"serviceName":"Bundle Call-Onz U Share",
+						"quota":"Unlimited",
+						"usage":"NA",
+						"validity":"NA"
+                    }
+               ]
+}
+]
+}
