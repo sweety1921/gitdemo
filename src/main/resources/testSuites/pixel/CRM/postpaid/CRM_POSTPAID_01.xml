@@ -16,7 +16,7 @@
                     </class>
                 </classes>
             </test>
--->
+
             <test name="CRM Postpaid Registration Postpaid GX68">
                 <parameter name="planName" value="Postpaid GX68"/>
                 <parameter name="accountType" value="POSTPAID"/>
@@ -30,7 +30,7 @@
                     </class>
                 </classes>
             </test>
-
+-->
                 <test name="UMREX Postpaid Registration Postpaid P79">
                     <parameter name="planName" value="Postpaid P79"/>
                     <parameter name="accountType" value="POSTPAID"/>
