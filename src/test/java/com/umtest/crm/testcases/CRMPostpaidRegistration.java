@@ -83,11 +83,11 @@ public class CRMPostpaidRegistration extends DriverFactory {
 //
 //                //*Perform Postpaid Registration*//*
 //                postpaidFuncs = new CRMPostpaidRegistrationFuncs(driverZsmart);
-//                boolean statusFlag = postpaidFuncs.doCRMPostpaidRegistration(MainUtil.dictionary.get("REGISTRATION_TYPE"),"MYKAD");
+               boolean statusFlag = postpaidFuncs.doCRMPostpaidRegistration(MainUtil.dictionary.get("REGISTRATION_TYPE"),"MYKAD");
                 //loginFuncs.logoutCRM();
 
                 Thread.sleep(30000);
-                boolean statusFlag=true;
+           //     boolean statusFlag=true;
                 if (statusFlag == true) {
                     ApplicationUtil.getAccountDetails(MainUtil.dictionary.get("MSISDN"));
 
