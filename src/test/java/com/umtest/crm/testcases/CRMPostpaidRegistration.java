@@ -87,7 +87,7 @@ public class CRMPostpaidRegistration extends DriverFactory {
                 //loginFuncs.logoutCRM();
 
                 Thread.sleep(30000);
-
+                boolean statusFlag=true;
                 if (statusFlag == true) {
                     ApplicationUtil.getAccountDetails(MainUtil.dictionary.get("MSISDN"));
 
