@@ -70,11 +70,11 @@ public class CRMPostpaidRegistration extends DriverFactory {
                 MainUtil.dictionary.put("TEST_DATA_FILE", testDataFile);
                 MainUtil.dictionary.put("Amount", Amount);
 
-                if (System.getProperty("simType") == null || System.getProperty("simType").equalsIgnoreCase("PHYSICAL")) {
-                    MainUtil.dictionary.put("SIM_TYPE", "PHYSICAL");
-                } else {
-                    MainUtil.dictionary.put("SIM_TYPE", "DUMMY");
-                }
+//                if (System.getProperty("simType") == null || System.getProperty("simType").equalsIgnoreCase("PHYSICAL")) {
+//                    MainUtil.dictionary.put("SIM_TYPE", "PHYSICAL");
+//                } else {
+//                    MainUtil.dictionary.put("SIM_TYPE", "DUMMY");
+//                }
 
                 //*Launch UMREX*//*
 //                driverZsmart = getDriver("CRM");
